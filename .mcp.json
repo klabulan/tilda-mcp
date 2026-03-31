@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "tilda": {
+      "command": "npx",
+      "args": ["-y", "@theyahia/tilda-mcp"],
+      "env": {
+        "TILDA_PUBLIC_KEY": "",
+        "TILDA_SECRET_KEY": ""
+      }
+    }
+  }
+}
