@@ -48,3 +48,6 @@ export async function tildaGet(method: string, params: Record<string, string> = 
   }
   throw new Error("Tilda API: все попытки исчерпаны");
 }
+
+// Exported for testing — allows injecting a mock fetch
+export { BASE_URL, TIMEOUT, MAX_RETRIES };
