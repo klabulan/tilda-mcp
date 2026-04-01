@@ -1,23 +1,19 @@
 {
   "name": "@theyahia/tilda-mcp",
-  "version": "1.1.1",
-  "description": "MCP server for Tilda — website builder, page management (Russia)",
+  "version": "1.1.0",
+  "description": "MCP server for Tilda API — projects, pages, export. 5 tools. Stdio + HTTP.",
   "type": "module",
   "main": "dist/index.js",
-  "bin": {
-    "tilda-mcp": "dist/index.js"
-  },
-  "files": [
-    "dist"
-  ],
-  "engines": {
-    "node": ">=18.0.0"
-  },
+  "bin": { "tilda-mcp": "dist/index.js" },
+  "files": ["dist"],
+  "engines": { "node": ">=18.0.0" },
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/index.ts",
     "start": "node dist/index.js",
-    "prepublishOnly": "npm run build"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
@@ -26,30 +22,14 @@
   "devDependencies": {
     "@types/node": "^22.0.0",
     "tsx": "^4.19.0",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "vitest": "^3.1.1"
   },
-  "publishConfig": {
-    "access": "public"
-  },
+  "publishConfig": { "access": "public" },
   "mcpName": "io.github.theYahia/tilda-mcp",
-  "keywords": [
-    "mcp",
-    "mcp-server",
-    "model-context-protocol",
-    "claude",
-    "ai",
-    "russian-api",
-    "tilda",
-    "website-builder",
-    "cms",
-    "api",
-    "typescript"
-  ],
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "claude", "ai", "russian-api", "tilda", "website-builder", "cms"],
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/theYahia/tilda-mcp.git"
-  },
+  "repository": { "type": "git", "url": "https://github.com/theYahia/tilda-mcp.git" },
   "homepage": "https://github.com/theYahia/tilda-mcp#readme",
   "author": "theYahia (https://github.com/theYahia)"
 }
