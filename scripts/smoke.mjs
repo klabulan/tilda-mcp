@@ -57,8 +57,8 @@ async function main() {
   console.log(`tools listed: ${tools.tools.length}`);
   const names = tools.tools.map(t => t.name);
   console.log("  " + names.join(", "));
-  if (names.length !== 14) {
-    console.error(`!! expected 14 tools, got ${names.length}`);
+  if (names.length !== 16) {
+    console.error(`!! expected 16 tools, got ${names.length}`);
     child.kill(); process.exit(1);
   }
 

@@ -75,7 +75,9 @@ export class XhrTransport implements WriteTransport {
       },
       body: body.toString(),
     });
-    const text = await res.text();
+    const rawText = await res.text();
+    // Tilda occasionally prepends <!--tlp--> (template-loader-prefix) to JSON responses; strip.
+    const text = rawText.replace(/^<!--tlp-->\s*/, "");
     if (!res.ok) {
       throw new Error(`Tilda XHR ${res.status} ${res.statusText} on ${path}: ${text.slice(0, 200)}`);
     }
