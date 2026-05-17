@@ -6,10 +6,13 @@ import {
   AccountLockoutError,
   CaptchaEncounteredError,
   SessionExpiredError,
+  TransportNotImplementedError,
   type AddBlockResult,
   type CreatePageResult,
+  type DeletePageResult,
   type ImportZeroblockResult,
   type PublishResult,
+  type SetPageSettingsResult,
   type TransportHealth,
   type WriteTransport,
 } from "../writeTransport.js";
@@ -75,6 +78,14 @@ export class PlaywrightTransport implements WriteTransport {
 
   async createPage(projectid: string, title: string, alias: string | null): Promise<CreatePageResult> {
     return this.withPage("create_page", (page) => createPageFlow(page, projectid, title, alias));
+  }
+
+  async setPageSettings(): Promise<SetPageSettingsResult> {
+    throw new TransportNotImplementedError("playwright", "setPageSettings — use XHR transport; UI flow not yet implemented");
+  }
+
+  async deletePage(): Promise<DeletePageResult> {
+    throw new TransportNotImplementedError("playwright", "deletePage — use XHR transport; UI flow not yet implemented");
   }
 
   async addBlock(pageid: string, block_type: string, position: number | null): Promise<AddBlockResult> {

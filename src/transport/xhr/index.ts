@@ -5,8 +5,10 @@ import {
   SessionExpiredError,
   type AddBlockResult,
   type CreatePageResult,
+  type DeletePageResult,
   type ImportZeroblockResult,
   type PublishResult,
+  type SetPageSettingsResult,
   type TransportHealth,
   type WriteTransport,
 } from "../writeTransport.js";
@@ -107,6 +109,55 @@ export class XhrTransport implements WriteTransport {
       preview_url: `${BASE_URL}/page/?pageid=${pageId}`,
       published_url: null,
     };
+  }
+
+  async setPageSettings(pageid: string, title: string | null, descr: string | null, alias: string | null): Promise<SetPageSettingsResult> {
+    const body = new URLSearchParams({
+      comm: "savepagesettings",
+      pageid,
+      test: "test4.0",   // observed in captured signature; safe constant
+      title: title ?? "",
+      descr: descr ?? "",
+      alias: alias ?? "",
+      imgfile: "",
+      "img-tuinfo-uuid": "",
+      "img-tuinfo-cdnurl": "",
+      "img-tuinfo-name": "",
+      "img-tuinfo-width": "",
+      "img-tuinfo-size": "",
+      fb_title: "",
+      fb_descr: "",
+      fb_imgfile: "",
+      "fb_img-tuinfo-uuid": "",
+      "fb_img-tuinfo-cdnurl": "",
+      "fb_img-tuinfo-name": "",
+      "fb_img-tuinfo-width": "",
+      "fb_img-tuinfo-size": "",
+      fb_img: "",
+      fb_url: "",
+      fb_appid: "",
+      twitter_site: "",
+      csrf: "",
+    });
+    await this.post("/projects/submit/", body);
+    log("info", "xhr.set_page_settings", `pageid=${pageid} title=${title ?? "<unchanged>"} alias=${alias ?? "<unchanged>"}`);
+    // Alias change requires republish for the filename on CDN to flip.
+    return { success: true, republish_required: alias !== null };
+  }
+
+  async deletePage(pageid: string): Promise<DeletePageResult> {
+    const body = new URLSearchParams({
+      comm: "delpage",
+      pageid,
+      csrf: "",
+    });
+    const { text } = await this.post("/projects/submit/", body);
+    const ok = text.trim().toUpperCase().startsWith("OK") || text.trim() === "" || text.trim() === "1";
+    if (!ok) {
+      throw new Error(`delete_page returned unexpected response: "${text.slice(0, 200)}"`);
+    }
+    log("info", "xhr.delete_page", `pageid=${pageid} deleted`);
+    return { success: true };
   }
 
   async addBlock(pageid: string, block_type: string, position: number | null): Promise<AddBlockResult> {

@@ -32,9 +32,20 @@ export interface PublishResult {
   published_at: string;
 }
 
+export interface SetPageSettingsResult {
+  success: boolean;
+  republish_required: boolean;
+}
+
+export interface DeletePageResult {
+  success: boolean;
+}
+
 export interface WriteTransport {
   init(): Promise<void>;
   createPage(projectid: string, title: string, alias: string | null): Promise<CreatePageResult>;
+  setPageSettings(pageid: string, title: string | null, descr: string | null, alias: string | null): Promise<SetPageSettingsResult>;
+  deletePage(pageid: string): Promise<DeletePageResult>;
   addBlock(pageid: string, block_type: string, position: number | null): Promise<AddBlockResult>;
   importZeroBlock(pageid: string, json: unknown, position: number | null): Promise<ImportZeroblockResult>;
   editBlock(blockid: string, patch: unknown): Promise<void>;

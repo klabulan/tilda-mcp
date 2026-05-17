@@ -10,6 +10,8 @@ import {
   getPageExportSchema, handleGetPageExport,
 } from "./tools/read/pages.js";
 import { createPageSchema, handleCreatePage } from "./tools/write/createPage.js";
+import { setPageSettingsSchema, handleSetPageSettings } from "./tools/write/setPageSettings.js";
+import { deletePageSchema, handleDeletePage } from "./tools/write/deletePage.js";
 import { addBlockSchema, handleAddBlock } from "./tools/write/addBlock.js";
 import { importZeroBlockSchema, handleImportZeroBlock } from "./tools/write/importZeroBlock.js";
 import { editBlockSchema, handleEditBlock } from "./tools/write/editBlock.js";
@@ -20,7 +22,7 @@ import { resolveCaptchaInteractiveSchema, handleResolveCaptchaInteractive } from
 import { dumpTransportLogSchema, handleDumpTransportLog } from "./tools/helpers/dumpTransportLog.js";
 import { disposeTransport } from "./transport/factory.js";
 
-const TOOL_COUNT = 14;
+const TOOL_COUNT = 16;
 
 function createMcpServer(): McpServer {
   const server = new McpServer({
@@ -49,24 +51,32 @@ function createMcpServer(): McpServer {
     getPageExportSchema.shape,
     async (p) => ({ content: [{ type: "text", text: await handleGetPageExport(p) }] }));
 
-  // --- 5 write tools (fork additions, drive editor.tilda.cc via Playwright) ---
-  server.tool("create_page", "Создать новую пустую страницу в проекте.",
+  // --- 7 write tools (fork additions; XHR-RE transport against tilda.ru editor endpoints) ---
+  server.tool("create_page", "Создать новую пустую страницу в проекте (template Blank).",
     createPageSchema.shape,
     async (p) => ({ content: [{ type: "text", text: await handleCreatePage(p) }] }));
 
-  server.tool("add_block", "Добавить стандартный T-блок (T123, T396 = Zero Block, и т.п.) на страницу.",
+  server.tool("set_page_settings", "Установить title, descr (SEO), alias (URL-slug) страницы. Alias change требует republish.",
+    setPageSettingsSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleSetPageSettings(p) }] }));
+
+  server.tool("delete_page", "Удалить страницу безвозвратно. ВНИМАНИЕ: без soft-delete / корзины.",
+    deletePageSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleDeletePage(p) }] }));
+
+  server.tool("add_block", "Добавить T-блок (T396 = Zero Block, T123 = заголовок, и т.п.).",
     addBlockSchema.shape,
     async (p) => ({ content: [{ type: "text", text: await handleAddBlock(p) }] }));
 
-  server.tool("import_zeroblock", "Импортировать Zero Block из JSON (Path A — драйв ZB primitives, не встроенная Tilda кнопка).",
+  server.tool("import_zeroblock", "Импортировать содержимое в Zero Block (STUB — endpoint TBD).",
     importZeroBlockSchema.shape,
     async (p) => ({ content: [{ type: "text", text: await handleImportZeroBlock(p) }] }));
 
-  server.tool("edit_block", "Изменить содержимое существующего блока.",
+  server.tool("edit_block", "Изменить содержимое существующего блока (STUB — endpoint TBD).",
     editBlockSchema.shape,
     async (p) => ({ content: [{ type: "text", text: await handleEditBlock(p) }] }));
 
-  server.tool("publish", "Опубликовать страницу (драйв кнопки Publish в редакторе).",
+  server.tool("publish", "Опубликовать страницу.",
     publishSchema.shape,
     async (p) => ({ content: [{ type: "text", text: await handlePublish(p) }] }));
 
@@ -148,7 +158,7 @@ async function main() {
     const server = createMcpServer();
     const transport = new StdioServerTransport();
     await server.connect(transport);
-    console.error(`[tilda-mcp@fork] Сервер запущен (stdio). ${TOOL_COUNT} инструментов (5 read + 5 write + 4 helpers).`);
+    console.error(`[tilda-mcp@fork] Сервер запущен (stdio). ${TOOL_COUNT} инструментов (5 read + 7 write + 4 helpers).`);
   }
 }
 
