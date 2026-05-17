@@ -55,19 +55,56 @@ export class PlaywrightTransport implements WriteTransport {
     log("info", "playwright.init", `Playwright HTTP transport ready`);
   }
 
-  /** First-time warmup: open tilda.ru/projects/ in a page so .tildacdn.com cookies populate. */
-  private async warmup(): Promise<void> {
-    if (this.warmedUp || !this.context) return;
+  /** Warm-up: open tilda.ru/projects/ in a page so .tildacdn.com cookies populate +
+   * Tilda refreshes the CSRF/session sliding window. Same behaviour as the user
+   * hitting F5 in their own browser when "Request timeout" pops up.
+   * If after warmup we're still redirected to /login/, the storageState is fully
+   * dead and the caller must run login_headed_bootstrap. */
+  private async warmup(force = false): Promise<void> {
+    if (this.warmedUp && !force) return;
+    if (!this.context) return;
     const page = await this.context.newPage();
     try {
       await page.goto(`${BASE_URL}/projects/`, { waitUntil: "domcontentloaded", timeout: 30_000 });
-      // brief idle so any async cookie-setting completes
       await new Promise(r => setTimeout(r, 800));
-    } catch {
-      // non-fatal
+      const url = page.url();
+      const titlePromise = page.title().catch(() => "");
+      const title = await titlePromise;
+      if (url.includes("/login") || /sign\s*in/i.test(title)) {
+        // Hard dead state — bubble up a typed error
+        this.warmedUp = false;
+        throw new SessionExpiredError(
+          `storageState is fully expired (warmup landed at ${url}). Run login_headed_bootstrap to refresh cookies.`,
+        );
+      }
+      log("debug", "pw.warmup", `warmup ok (force=${force}, url=${url.slice(0, 80)})`);
+    } catch (e) {
+      if (e instanceof SessionExpiredError) throw e;
+      log("warn", "pw.warmup", `warmup fail: ${(e as Error).message.slice(0, 100)}`);
     } finally {
       await page.close().catch(() => undefined);
       this.warmedUp = true;
+    }
+  }
+
+  /** Wrap an HTTP attempt with auto-retry on session-expired or transient-Tilda-error.
+   * Tilda's session sliding window invalidates ~every 5-10 min or 5-8 reqs; the user's
+   * native Chrome sees the same "Request timeout" dialog (informally confirmed). One
+   * warmup-and-retry mirrors what a human does (F5 + click again).
+   */
+  private async withRetry<T>(label: string, attempt: () => Promise<T>): Promise<T> {
+    try {
+      return await attempt();
+    } catch (e) {
+      const msg = (e as Error).message || "";
+      const isSession = e instanceof SessionExpiredError || /not authorized|<!DOCTYPE|<div /i.test(msg);
+      const isTimeout = /timeout|ECONN|socket hang up|ETIMEDOUT|Request timeout/i.test(msg);
+      if (!isSession && !isTimeout) throw e;
+      log("warn", `pw.${label}.retry`, `transient error → warmup + retry once: ${msg.slice(0, 120)}`);
+      await this.warmup(true);
+      // Small backoff to let Tilda settle
+      await new Promise(r => setTimeout(r, 1200 + Math.floor(Math.random() * 800)));
+      return await attempt();
     }
   }
 
@@ -91,58 +128,65 @@ export class PlaywrightTransport implements WriteTransport {
     return `${BASE_URL}/projects/`;
   }
 
-  /** Form-urlencoded POST via Playwright's APIRequestContext. */
+  /** Form-urlencoded POST via Playwright's APIRequestContext. With auto-retry on
+   * Tilda session-flake (mirrors the user-hits-F5 behaviour). */
   private async post(path: string, body: Record<string, string>): Promise<string> {
-    if (!this.context) throw new Error("PlaywrightTransport not initialised");
-    await this.warmup();
-    await this.pace();
-    const form: Record<string, string> = {};
-    for (const [k, v] of Object.entries(body)) form[k] = v == null ? "" : String(v);
-    const res = await this.context.request.post(`${BASE_URL}${path}`, {
-      form,
-      headers: {
-        "Origin": BASE_URL,
-        "Referer": this.refererFor(path, form),
-        "X-Requested-With": "XMLHttpRequest",
-        "Accept": "application/json, text/plain, */*",
-        "Sec-Fetch-Dest": "empty",
-        "Sec-Fetch-Mode": "cors",
-        "Sec-Fetch-Site": "same-origin",
-      },
+    return this.withRetry(`POST ${path}`, async () => {
+      if (!this.context) throw new Error("PlaywrightTransport not initialised");
+      await this.warmup();
+      await this.pace();
+      const form: Record<string, string> = {};
+      for (const [k, v] of Object.entries(body)) form[k] = v == null ? "" : String(v);
+      const res = await this.context.request.post(`${BASE_URL}${path}`, {
+        form,
+        headers: {
+          "Origin": BASE_URL,
+          "Referer": this.refererFor(path, form),
+          "X-Requested-With": "XMLHttpRequest",
+          "Accept": "application/json, text/plain, */*",
+          "Sec-Fetch-Dest": "empty",
+          "Sec-Fetch-Mode": "cors",
+          "Sec-Fetch-Site": "same-origin",
+        },
+        timeout: 30_000,
+      });
+      const text = (await res.text()).replace(/^<!--tlp-->\s*/, "");
+      if (!res.ok()) throw new Error(`Tilda HTTP ${res.status()} on ${path}: ${text.slice(0, 200)}`);
+      if (text.includes("you are not authorized") || text.startsWith("<div ") || text.startsWith("<!DOCTYPE")) {
+        throw new SessionExpiredError(`Tilda returned auth-error page on ${path} — re-login.`);
+      }
+      return text;
     });
-    const text = (await res.text()).replace(/^<!--tlp-->\s*/, "");
-    if (!res.ok()) throw new Error(`Tilda HTTP ${res.status()} on ${path}: ${text.slice(0, 200)}`);
-    if (text.includes("you are not authorized") || text.startsWith("<div ") || text.startsWith("<!DOCTYPE")) {
-      throw new SessionExpiredError(`Tilda returned auth-error page on ${path} — re-login.`);
-    }
-    return text;
   }
 
   /** multipart/form-data POST (for /zero/get/ and /zero/submit/). */
   private async postMultipart(path: string, fields: Record<string, string>): Promise<string> {
-    if (!this.context) throw new Error("PlaywrightTransport not initialised");
-    await this.warmup();
-    await this.pace();
-    const multipart: Record<string, string> = {};
-    for (const [k, v] of Object.entries(fields)) multipart[k] = v == null ? "" : String(v);
-    const res = await this.context.request.post(`${BASE_URL}${path}`, {
-      multipart,
-      headers: {
-        "Origin": BASE_URL,
-        "Referer": this.refererFor(path, fields),
-        "X-Requested-With": "XMLHttpRequest",
-        "Accept": "application/json, text/plain, */*",
-        "Sec-Fetch-Dest": "empty",
-        "Sec-Fetch-Mode": "cors",
-        "Sec-Fetch-Site": "same-origin",
-      },
+    return this.withRetry(`POST-multi ${path}`, async () => {
+      if (!this.context) throw new Error("PlaywrightTransport not initialised");
+      await this.warmup();
+      await this.pace();
+      const multipart: Record<string, string> = {};
+      for (const [k, v] of Object.entries(fields)) multipart[k] = v == null ? "" : String(v);
+      const res = await this.context.request.post(`${BASE_URL}${path}`, {
+        multipart,
+        headers: {
+          "Origin": BASE_URL,
+          "Referer": this.refererFor(path, fields),
+          "X-Requested-With": "XMLHttpRequest",
+          "Accept": "application/json, text/plain, */*",
+          "Sec-Fetch-Dest": "empty",
+          "Sec-Fetch-Mode": "cors",
+          "Sec-Fetch-Site": "same-origin",
+        },
+        timeout: 30_000,
+      });
+      const text = (await res.text()).replace(/^<!--tlp-->\s*/, "");
+      if (!res.ok()) throw new Error(`Tilda HTTP ${res.status()} on ${path}: ${text.slice(0, 200)}`);
+      if (text.includes("you are not authorized") || text.startsWith("<div ") || text.startsWith("<!DOCTYPE")) {
+        throw new SessionExpiredError(`Tilda returned auth-error page on ${path} — re-login.`);
+      }
+      return text;
     });
-    const text = (await res.text()).replace(/^<!--tlp-->\s*/, "");
-    if (!res.ok()) throw new Error(`Tilda HTTP ${res.status()} on ${path}: ${text.slice(0, 200)}`);
-    if (text.includes("you are not authorized") || text.startsWith("<div ") || text.startsWith("<!DOCTYPE")) {
-      throw new SessionExpiredError(`Tilda returned auth-error page on ${path} — re-login.`);
-    }
-    return text;
   }
 
   // ---- WriteTransport interface ----
