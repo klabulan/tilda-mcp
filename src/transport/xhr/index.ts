@@ -20,6 +20,60 @@ const BASE_URL = `https://${TILDA_HOST}`;
 const REALISTIC_UA =
   "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36";
 
+// Browser-realistic headers Chrome 148 sends on XHR/fetch. Tilda's anti-bot stack
+// invalidates sessions that lack these (Sec-Fetch-* + Sec-Ch-Ua are sentinel checks).
+const BROWSER_HEADERS: Record<string, string> = {
+  "User-Agent": REALISTIC_UA,
+  "Accept-Language": "en-US,en;q=0.9,ru;q=0.8",
+  "Accept-Encoding": "gzip, deflate",
+  "Sec-Ch-Ua": '"Chromium";v="148", "Not.A/Brand";v="24", "Google Chrome";v="148"',
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Sec-Ch-Ua-Platform": '"Linux"',
+  "Sec-Fetch-Dest": "empty",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Site": "same-origin",
+};
+
+// Human-pace jitter — last call timestamp per process, enforces min interval between POSTs.
+let _lastCallTs = 0;
+const MIN_INTERVAL_MS = 850;
+async function paceCall(): Promise<void> {
+  const now = Date.now();
+  const since = now - _lastCallTs;
+  if (since < MIN_INTERVAL_MS) {
+    const wait = MIN_INTERVAL_MS - since + Math.floor(Math.random() * 600);
+    await new Promise((r) => setTimeout(r, wait));
+  } else {
+    // small jitter even when interval natural-passed
+    await new Promise((r) => setTimeout(r, 120 + Math.floor(Math.random() * 380)));
+  }
+  _lastCallTs = Date.now();
+}
+
+/** Build a per-request Referer that matches what a human browser would send when
+ * sitting on the relevant editor page. Anti-bot checks Referer ≈ Origin context.
+ */
+function refererForPath(path: string, body?: URLSearchParams | Record<string, string>): string {
+  const get = (k: string) => {
+    if (!body) return undefined;
+    if (body instanceof URLSearchParams) return body.get(k) ?? undefined;
+    return (body as Record<string, string>)[k];
+  };
+  const pageid = get("pageid");
+  const projectid = get("projectid");
+  if (path.startsWith("/zero/") && pageid) {
+    const recordid = get("recordid");
+    return `${BASE_URL}/zero/?recordid=${encodeURIComponent(recordid ?? "")}&pageid=${encodeURIComponent(pageid)}`;
+  }
+  if (path.startsWith("/page/") && pageid) {
+    return `${BASE_URL}/page/?pageid=${encodeURIComponent(pageid)}`;
+  }
+  if (path.startsWith("/projects/") && projectid) {
+    return `${BASE_URL}/projects/?projectid=${encodeURIComponent(projectid)}`;
+  }
+  return `${BASE_URL}/projects/`;
+}
+
 interface PublishResponse {
   projectid: string;
   pageid: string;
@@ -62,24 +116,28 @@ export class XhrTransport implements WriteTransport {
 
   private async post(path: string, body: URLSearchParams): Promise<{ status: number; text: string }> {
     if (!this.cookieHeader) throw new Error("XhrTransport not initialised — call init() first");
+    await paceCall();
     const res = await fetch(`${BASE_URL}${path}`, {
       method: "POST",
       headers: {
+        ...BROWSER_HEADERS,
         "Content-Type": "application/x-www-form-urlencoded",
+        "Accept": "application/json, text/plain, */*",
         "Cookie": this.cookieHeader,
         "Origin": BASE_URL,
-        "Referer": `${BASE_URL}/`,
-        "User-Agent": REALISTIC_UA,
+        "Referer": refererForPath(path, body),
         "X-Requested-With": "XMLHttpRequest",
-        "Accept": "application/json, text/plain, */*",
       },
       body: body.toString(),
     });
     const rawText = await res.text();
-    // Tilda occasionally prepends <!--tlp--> (template-loader-prefix) to JSON responses; strip.
     const text = rawText.replace(/^<!--tlp-->\s*/, "");
     if (!res.ok) {
       throw new Error(`Tilda XHR ${res.status} ${res.statusText} on ${path}: ${text.slice(0, 200)}`);
+    }
+    // Sentinel-detect Tilda's "not authorized" HTML response (200 OK but content == error page)
+    if (text.includes("you are not authorized") || text.startsWith("<div ")) {
+      throw new SessionExpiredError(`Tilda returned auth-error page on ${path} — session invalidated. Run login_headed_bootstrap.`);
     }
     return { status: res.status, text };
   }
@@ -87,7 +145,9 @@ export class XhrTransport implements WriteTransport {
   /** multipart/form-data POST — required by the ZB editor endpoints (/zero/get/, /zero/submit/). */
   private async postMultipart(path: string, fields: Record<string, string>): Promise<{ status: number; text: string }> {
     if (!this.cookieHeader) throw new Error("XhrTransport not initialised — call init() first");
-    const boundary = `----TildaMcpFormBoundary${Math.random().toString(16).slice(2)}`;
+    await paceCall();
+    // Use WebKit-style boundary string so it looks like a real Chrome form upload.
+    const boundary = `----WebKitFormBoundary${Math.random().toString(36).slice(2, 18)}`;
     const parts: string[] = [];
     for (const [k, v] of Object.entries(fields)) {
       parts.push(`--${boundary}\r\nContent-Disposition: form-data; name="${k}"\r\n\r\n${v}\r\n`);
@@ -97,19 +157,22 @@ export class XhrTransport implements WriteTransport {
     const res = await fetch(`${BASE_URL}${path}`, {
       method: "POST",
       headers: {
+        ...BROWSER_HEADERS,
         "Content-Type": `multipart/form-data; boundary=${boundary}`,
+        "Accept": "application/json, text/plain, */*",
         "Cookie": this.cookieHeader,
         "Origin": BASE_URL,
-        "Referer": `${BASE_URL}/`,
-        "User-Agent": REALISTIC_UA,
+        "Referer": refererForPath(path, fields),
         "X-Requested-With": "XMLHttpRequest",
-        "Accept": "application/json, text/plain, */*",
       },
       body,
     });
     const rawText = await res.text();
     const text = rawText.replace(/^<!--tlp-->\s*/, "");
     if (!res.ok) throw new Error(`Tilda XHR ${res.status} ${res.statusText} on ${path}: ${text.slice(0, 200)}`);
+    if (text.includes("you are not authorized") || text.startsWith("<div ")) {
+      throw new SessionExpiredError(`Tilda returned auth-error page on ${path} — session invalidated.`);
+    }
     return { status: res.status, text };
   }
 
