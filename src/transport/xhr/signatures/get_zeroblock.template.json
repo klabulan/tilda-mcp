@@ -1,0 +1,18 @@
+{
+  "action": "get_zeroblock",
+  "method": "POST",
+  "url": "https://tilda.ru/zero/get/",
+  "headers_required": ["Cookie", "Origin", "Referer"],
+  "content_type": "multipart/form-data",
+  "fields": {
+    "comm": "getzerocode",
+    "pageid": "{{pageid}}"
+  },
+  "response_format": "JSON — { \"0\": {...}, \"1\": {...}, ..., \"groups\": [...], \"ab_height\": \"...\", ... }",
+  "notes": [
+    "Tilda returns the CURRENT Zero Block content as JSON in the schema documented in import_zeroblock signature.",
+    "Use this to read existing ZB content before edit (read-modify-write pattern)."
+  ],
+  "captured_at": "2026-05-17",
+  "captured_against_tilda_host": "tilda.ru"
+}

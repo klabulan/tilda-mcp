@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { tildaGet } from "../client.js";
+import { tildaGet } from "../../client.js";
 
 // --- get_projects ---
 export const getProjectsSchema = z.object({});

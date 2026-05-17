@@ -1,7 +1,7 @@
 {
   "name": "@theyahia/tilda-mcp",
-  "version": "1.1.0",
-  "description": "MCP server for Tilda — website builder, page management (Russia)",
+  "version": "1.1.1-fork.0",
+  "description": "Fork of @theyahia/tilda-mcp adding write-tools (create_page, add_block, import_zeroblock, edit_block, publish) via Playwright editor automation. Read tools preserved from upstream.",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
@@ -14,15 +14,18 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && node scripts/copy_data.mjs",
     "dev": "tsx src/index.ts",
     "start": "node dist/index.js",
     "test": "vitest run",
     "test:watch": "vitest",
+    "refresh:templates": "node scripts/refresh_templates.mjs",
     "prepublishOnly": "npm run build && npm test"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
+    "playwright": "^1.60.0",
+    "undici": "^8.3.0",
     "zod": "^3.24.0"
   },
   "devDependencies": {

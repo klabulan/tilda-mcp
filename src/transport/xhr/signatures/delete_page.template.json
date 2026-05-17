@@ -1,0 +1,16 @@
+{
+  "action": "delete_page",
+  "method": "POST",
+  "url": "https://tilda.ru/projects/submit/",
+  "headers_required": ["Cookie", "Origin", "Referer"],
+  "content_type": "application/x-www-form-urlencoded",
+  "body_template": "comm=delpage&pageid={{pageid}}&csrf=",
+  "response_format": "text — \"OK\" on success",
+  "notes": [
+    "Frontend wrapper: window.td__delPage(pageid) → delPage(pageid) — calls this endpoint after window.confirm().",
+    "Tilda confirm shows a dialog 'Удалить страницу?'; the XHR is fired regardless of how UI confirmation was bypassed.",
+    "Operation is non-recoverable for the user. Tilda has no soft-delete / trash for full pages (only for blocks)."
+  ],
+  "captured_at": "2026-05-17",
+  "captured_against_tilda_host": "tilda.ru"
+}

@@ -5,7 +5,7 @@ import {
   handleGetPages,
   handleGetPage,
   handleGetPageExport,
-} from "../src/tools/pages.js";
+} from "../src/tools/read/pages.js";
 
 // Mock fetch globally
 const mockFetch = vi.fn();

@@ -1,0 +1,20 @@
+{
+  "action": "set_page_settings",
+  "method": "POST",
+  "url": "https://tilda.ru/projects/submit/",
+  "headers_required": ["Cookie", "Origin", "Referer"],
+  "content_type": "application/x-www-form-urlencoded",
+  "body_template": "comm=savepagesettings&pageid={{pageid}}&test=test4.0&title={{title}}&descr={{descr}}&alias={{alias}}&imgfile=&img-tuinfo-uuid=&img-tuinfo-cdnurl=&img-tuinfo-name=&img-tuinfo-width=&img-tuinfo-size=&fb_title=&fb_descr=&fb_imgfile=&fb_img-tuinfo-uuid=&fb_img-tuinfo-cdnurl=&fb_img-tuinfo-name=&fb_img-tuinfo-width=&fb_img-tuinfo-size=&fb_img=&fb_url=&fb_appid=&twitter_site=&csrf=",
+  "params": {
+    "title": "page title (visible in browser tab + page list)",
+    "descr": "meta description (SEO)",
+    "alias": "URL slug — published as <project>.tilda.ws/<alias>.html if non-empty"
+  },
+  "response_format": "text — empty or short OK on success",
+  "notes": [
+    "Tilda popup form has ~40 fields incl. SEO/social. For v0 we send title/descr/alias only with empty defaults for the rest.",
+    "Alias change requires republish for filename on CDN to flip from pageNNN.html to <alias>.html."
+  ],
+  "captured_at": "2026-05-17",
+  "captured_against_tilda_host": "tilda.ru"
+}

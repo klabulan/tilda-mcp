@@ -1,0 +1,15 @@
+{
+  "action": "add_block",
+  "method": "POST",
+  "url": "https://tilda.ru/page/submit/",
+  "headers_required": ["Cookie", "Origin", "Referer"],
+  "content_type": "application/x-www-form-urlencoded",
+  "body_template": "comm=addnewrecord&pageid={{pageid}}&tplid={{tplid}}&with_code=yes",
+  "params": {
+    "tplid_zeroblock": "396",
+    "tplid_format": "numeric T-code without the T prefix (e.g. T123 → 123)"
+  },
+  "response_format": "JSON {html: string, ...} — html contains the new record markup; extract recordid via /id=\"record(\\d+)\"/",
+  "captured_at": "2026-05-17",
+  "captured_against_tilda_host": "tilda.ru"
+}

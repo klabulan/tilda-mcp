@@ -1,3 +1,19 @@
-node_modules/
-dist/
-*.tgz
+node_modules
+dist
+*.log
+.DS_Store
+
+# Sensitive — Playwright storage state (Tilda session cookies)
+state.json
+*.state.json
+.auth/
+
+# XHR-RE captured signatures may contain session-specific IDs until sanitised
+src/transport/xhr/signatures/*.captured.json
+
+# Local env files (creds)
+.env
+.env.*
+!.env.example
+scripts/tilda/explore-out/
+scripts/tilda/explore-out/
