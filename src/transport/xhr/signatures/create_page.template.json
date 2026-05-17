@@ -1,0 +1,15 @@
+{
+  "action": "create_page",
+  "method": "POST",
+  "url": "https://tilda.ru/projects/submit/",
+  "headers_required": ["Cookie", "Origin", "Referer"],
+  "content_type": "application/x-www-form-urlencoded",
+  "body_template": "comm=addnewpagedublicateexample&projectid={{projectid}}&examplepageid={{templateid}}&folderid={{folderid}}&csrf=",
+  "params": {
+    "templateid_blank": "1231",
+    "templateid_ai": "1232"
+  },
+  "response_format": "text/plain — body is the new pageid as decimal digits",
+  "captured_at": "2026-05-17",
+  "captured_against_tilda_host": "tilda.ru"
+}

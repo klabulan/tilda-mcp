@@ -1,0 +1,13 @@
+{
+  "action": "publish",
+  "method": "POST",
+  "url": "https://tilda.ru/page/publish/",
+  "headers_required": ["Cookie", "Origin", "Referer"],
+  "content_type": "application/x-www-form-urlencoded",
+  "body_template": "comm=pagepublish&pageid={{pageid}}&csrf=&returnjson=yes",
+  "response_format": "JSON {projectid, pageid, publishonepage, link, linkstr}",
+  "url_pattern": "<link>/page<pageid>.html OR <link>/<alias>.html if alias is set",
+  "first_time_caveat": "On the project's first publish, Tilda shows an alias-confirm popup in UI. Via XHR this endpoint succeeds regardless — the popup is UI-only setup. After first publish, subsequent calls are direct.",
+  "captured_at": "2026-05-17",
+  "captured_against_tilda_host": "tilda.ru"
+}

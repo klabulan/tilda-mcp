@@ -37,7 +37,7 @@ export function loadConfig(): Config {
   return {
     publicKey: process.env.TILDA_PUBLIC_KEY ?? process.env.TILDA_PUBLICKEY,
     secretKey: process.env.TILDA_SECRET_KEY ?? process.env.TILDA_SECRETKEY,
-    transport: (process.env.TILDA_MCP_TRANSPORT as TransportMode | undefined) ?? "playwright",
+    transport: (process.env.TILDA_MCP_TRANSPORT as TransportMode | undefined) ?? "xhr",
     autoFailoverThreshold: envInt("TILDA_MCP_AUTO_FAILOVER_THRESHOLD", 3),
     stateFilePath: process.env.TILDA_MCP_STATE_PATH ?? defaultStatePath,
     allowPasswordEnv: envBool("TILDA_MCP_ALLOW_PASSWORD_ENV", false),
