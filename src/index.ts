@@ -8,50 +8,84 @@ import {
   getPagesSchema, handleGetPages,
   getPageSchema, handleGetPage,
   getPageExportSchema, handleGetPageExport,
-} from "./tools/pages.js";
+} from "./tools/read/pages.js";
+import { createPageSchema, handleCreatePage } from "./tools/write/createPage.js";
+import { addBlockSchema, handleAddBlock } from "./tools/write/addBlock.js";
+import { importZeroBlockSchema, handleImportZeroBlock } from "./tools/write/importZeroBlock.js";
+import { editBlockSchema, handleEditBlock } from "./tools/write/editBlock.js";
+import { publishSchema, handlePublish } from "./tools/write/publish.js";
+import { healthCheckSchema, handleHealthCheck } from "./tools/helpers/healthCheck.js";
+import { loginHeadedBootstrapSchema, handleLoginHeadedBootstrap } from "./tools/helpers/loginHeadedBootstrap.js";
+import { resolveCaptchaInteractiveSchema, handleResolveCaptchaInteractive } from "./tools/helpers/resolveCaptchaInteractive.js";
+import { dumpTransportLogSchema, handleDumpTransportLog } from "./tools/helpers/dumpTransportLog.js";
+import { disposeTransport } from "./transport/factory.js";
 
-const TOOL_COUNT = 5;
+const TOOL_COUNT = 14;
 
 function createMcpServer(): McpServer {
   const server = new McpServer({
     name: "tilda-mcp",
-    version: "1.1.0",
+    version: "1.1.1-fork.0",
   });
 
-  server.tool(
-    "get_projects",
-    "Получить список проектов Tilda.",
+  // --- 5 read tools (preserved from upstream) ---
+  server.tool("get_projects", "Список проектов Tilda.",
     getProjectsSchema.shape,
-    async (params) => ({ content: [{ type: "text", text: await handleGetProjects(params) }] }),
-  );
+    async (p) => ({ content: [{ type: "text", text: await handleGetProjects(p) }] }));
 
-  server.tool(
-    "get_project_info",
-    "Получить подробную информацию о проекте Tilda (домен, настройки, CSS/JS).",
+  server.tool("get_project_info", "Информация о проекте Tilda (домен, настройки, пути).",
     getProjectInfoSchema.shape,
-    async (params) => ({ content: [{ type: "text", text: await handleGetProjectInfo(params) }] }),
-  );
+    async (p) => ({ content: [{ type: "text", text: await handleGetProjectInfo(p) }] }));
 
-  server.tool(
-    "get_pages",
-    "Получить список страниц проекта Tilda.",
+  server.tool("get_pages", "Список страниц проекта.",
     getPagesSchema.shape,
-    async (params) => ({ content: [{ type: "text", text: await handleGetPages(params) }] }),
-  );
+    async (p) => ({ content: [{ type: "text", text: await handleGetPages(p) }] }));
 
-  server.tool(
-    "get_page",
-    "Получить полную информацию о странице Tilda (HTML, CSS, JS).",
+  server.tool("get_page", "Полная информация о странице (HTML, CSS, JS).",
     getPageSchema.shape,
-    async (params) => ({ content: [{ type: "text", text: await handleGetPage(params) }] }),
-  );
+    async (p) => ({ content: [{ type: "text", text: await handleGetPage(p) }] }));
 
-  server.tool(
-    "get_page_export",
-    "Экспортировать страницу Tilda — HTML, CSS, JS, изображения для самостоятельного хостинга.",
+  server.tool("get_page_export", "Экспорт страницы для самостоятельного хостинга.",
     getPageExportSchema.shape,
-    async (params) => ({ content: [{ type: "text", text: await handleGetPageExport(params) }] }),
-  );
+    async (p) => ({ content: [{ type: "text", text: await handleGetPageExport(p) }] }));
+
+  // --- 5 write tools (fork additions, drive editor.tilda.cc via Playwright) ---
+  server.tool("create_page", "Создать новую пустую страницу в проекте.",
+    createPageSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleCreatePage(p) }] }));
+
+  server.tool("add_block", "Добавить стандартный T-блок (T123, T396 = Zero Block, и т.п.) на страницу.",
+    addBlockSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleAddBlock(p) }] }));
+
+  server.tool("import_zeroblock", "Импортировать Zero Block из JSON (Path A — драйв ZB primitives, не встроенная Tilda кнопка).",
+    importZeroBlockSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleImportZeroBlock(p) }] }));
+
+  server.tool("edit_block", "Изменить содержимое существующего блока.",
+    editBlockSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleEditBlock(p) }] }));
+
+  server.tool("publish", "Опубликовать страницу (драйв кнопки Publish в редакторе).",
+    publishSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handlePublish(p) }] }));
+
+  // --- 4 helpers ---
+  server.tool("health_check", "Состояние read API + write transport + storageState.",
+    healthCheckSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleHealthCheck(p) }] }));
+
+  server.tool("login_headed_bootstrap", "Открыть headed Chromium для первого Tilda login → сохранить storageState.",
+    loginHeadedBootstrapSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleLoginHeadedBootstrap(p) }] }));
+
+  server.tool("resolve_captcha_interactive", "Pause + surface CAPTCHA для ручного решения. v0 STUB.",
+    resolveCaptchaInteractiveSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleResolveCaptchaInteractive(p) }] }));
+
+  server.tool("dump_transport_log", "Последние N записей transport log (с redaction).",
+    dumpTransportLogSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleDumpTransportLog(p) }] }));
 
   return server;
 }
@@ -74,7 +108,6 @@ async function startHttpMode(port: number) {
     }
 
     if (url.pathname === "/mcp") {
-      // Parse body for POST requests
       if (req.method === "POST") {
         const chunks: Buffer[] = [];
         for await (const chunk of req) chunks.push(chunk as Buffer);
@@ -101,13 +134,21 @@ async function main() {
   const portIdx = args.indexOf("--port");
   const port = portIdx !== -1 ? parseInt(args[portIdx + 1], 10) : 3001;
 
+  // Graceful shutdown to dispose Playwright browser
+  const cleanup = async () => {
+    await disposeTransport().catch(() => undefined);
+    process.exit(0);
+  };
+  process.on("SIGINT", cleanup);
+  process.on("SIGTERM", cleanup);
+
   if (httpMode) {
     await startHttpMode(port);
   } else {
     const server = createMcpServer();
     const transport = new StdioServerTransport();
     await server.connect(transport);
-    console.error(`[tilda-mcp] Сервер запущен (stdio). ${TOOL_COUNT} инструментов. Требуется TILDA_PUBLIC_KEY + TILDA_SECRET_KEY.`);
+    console.error(`[tilda-mcp@fork] Сервер запущен (stdio). ${TOOL_COUNT} инструментов (5 read + 5 write + 4 helpers).`);
   }
 }
 
