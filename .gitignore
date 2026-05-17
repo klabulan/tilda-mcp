@@ -17,3 +17,4 @@ src/transport/xhr/signatures/*.captured.json
 !.env.example
 scripts/tilda/explore-out/
 scripts/tilda/explore-out/
+scripts/tilda/figma-out/

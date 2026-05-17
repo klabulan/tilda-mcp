@@ -1,0 +1,15 @@
+{
+  "action": "upload_image",
+  "method": "POST",
+  "url": "https://upload.tildacdn.com/api/upload/?publickey={{publickey}}&uploadkey={{uploadkey}}",
+  "headers_required": ["Origin"],
+  "content_type": "multipart/form-data (single 'file' field)",
+  "fields": {
+    "publickey": "uiyejbdskjfiowe32 (static — Tilda's frontend upload key, captured 2026-05-17)",
+    "uploadkey": "{{uuid-v4}} — per-upload session token, may be arbitrary UUID-like string"
+  },
+  "auth_note": "Endpoint does NOT require login cookies — it's the public uploader used by all Tilda sites. Treat publickey as opaque shared secret distributed in tilda.cc frontend code.",
+  "response_format": "{\"errorExists\":0, \"result\":[{cdnUrl, uuid, width, height, size, name, ext, ...}]}",
+  "captured_at": "2026-05-17",
+  "captured_against": "upload.tildacdn.com"
+}

@@ -13,19 +13,21 @@ import { listBlockTemplatesSchema, handleListBlockTemplates } from "./tools/read
 import { describeElementSchemaSchema, handleDescribeElementSchema } from "./tools/read/describeElementSchema.js";
 import { createPageSchema, handleCreatePage } from "./tools/write/createPage.js";
 import { setPageSettingsSchema, handleSetPageSettings } from "./tools/write/setPageSettings.js";
+import { setSiteSettingsSchema, handleSetSiteSettings } from "./tools/write/setSiteSettings.js";
 import { deletePageSchema, handleDeletePage } from "./tools/write/deletePage.js";
 import { addBlockSchema, handleAddBlock } from "./tools/write/addBlock.js";
 import { importZeroBlockSchema, handleImportZeroBlock } from "./tools/write/importZeroBlock.js";
 import { getZeroBlockSchema, handleGetZeroBlock } from "./tools/write/getZeroBlock.js";
 import { editBlockSchema, handleEditBlock } from "./tools/write/editBlock.js";
 import { publishSchema, handlePublish } from "./tools/write/publish.js";
+import { uploadImageSchema, handleUploadImage } from "./tools/write/uploadImage.js";
 import { healthCheckSchema, handleHealthCheck } from "./tools/helpers/healthCheck.js";
 import { loginHeadedBootstrapSchema, handleLoginHeadedBootstrap } from "./tools/helpers/loginHeadedBootstrap.js";
 import { resolveCaptchaInteractiveSchema, handleResolveCaptchaInteractive } from "./tools/helpers/resolveCaptchaInteractive.js";
 import { dumpTransportLogSchema, handleDumpTransportLog } from "./tools/helpers/dumpTransportLog.js";
 import { disposeTransport } from "./transport/factory.js";
 
-const TOOL_COUNT = 19;
+const TOOL_COUNT = 21;
 
 function createMcpServer(): McpServer {
   const server = new McpServer({
@@ -75,6 +77,10 @@ function createMcpServer(): McpServer {
     deletePageSchema.shape,
     async (p) => ({ content: [{ type: "text", text: await handleDeletePage(p) }] }));
 
+  server.tool("set_site_settings", "Установить site-wide settings: typography (headlinefont, textfont, sizes/weights), colors (headlinecolor/textcolor/linkcolor/bgcolor), customcssfile URL, customjsfile URL, favicon. Re-publish each page after.",
+    setSiteSettingsSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleSetSiteSettings(p) }] }));
+
   server.tool("add_block", "Добавить T-блок (T396 = Zero Block, T123 = заголовок, и т.п.).",
     addBlockSchema.shape,
     async (p) => ({ content: [{ type: "text", text: await handleAddBlock(p) }] }));
@@ -94,6 +100,10 @@ function createMcpServer(): McpServer {
   server.tool("publish", "Опубликовать страницу.",
     publishSchema.shape,
     async (p) => ({ content: [{ type: "text", text: await handlePublish(p) }] }));
+
+  server.tool("upload_image", "Загрузить локальный image-файл в Tilda CDN. Возвращает cdn_url + uuid + width/height (use в ZB image element как img/filewidth/fileheight).",
+    uploadImageSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleUploadImage(p) }] }));
 
   // --- 4 helpers ---
   server.tool("health_check", "Состояние read API + write transport + storageState.",
@@ -173,7 +183,7 @@ async function main() {
     const server = createMcpServer();
     const transport = new StdioServerTransport();
     await server.connect(transport);
-    console.error(`[tilda-mcp@fork] Сервер запущен (stdio). ${TOOL_COUNT} инструментов (7 read + 8 write + 4 helpers).`);
+    console.error(`[tilda-mcp@fork] Сервер запущен (stdio). ${TOOL_COUNT} инструментов (7 read + 10 write + 4 helpers).`);
   }
 }
 

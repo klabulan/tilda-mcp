@@ -176,6 +176,23 @@ export class XhrTransport implements WriteTransport {
     return { success: true, republish_required: alias !== null };
   }
 
+  async setSiteSettings(projectid: string, patch: Record<string, string>): Promise<{ success: boolean }> {
+    const body = new URLSearchParams();
+    body.set("comm", "saveprojectsettings");
+    body.set("projectid", projectid);
+    body.set("csrf", "");
+    for (const [k, v] of Object.entries(patch)) {
+      if (k === "comm" || k === "projectid" || k === "csrf") continue;
+      body.set(k, v == null ? "" : String(v));
+    }
+    const { text } = await this.post("/projects/submit/", body);
+    if (!text.trim().toUpperCase().startsWith("OK")) {
+      throw new Error(`set_site_settings unexpected response: "${text.slice(0, 200)}"`);
+    }
+    log("info", "xhr.set_site_settings", `Updated site ${projectid} (${Object.keys(patch).length} field(s))`);
+    return { success: true };
+  }
+
   async deletePage(pageid: string): Promise<DeletePageResult> {
     const body = new URLSearchParams({
       comm: "delpage",

@@ -32,6 +32,10 @@ export interface PublishResult {
   published_at: string;
 }
 
+export interface SetSiteSettingsResult {
+  success: boolean;
+}
+
 export interface SetPageSettingsResult {
   success: boolean;
   republish_required: boolean;
@@ -46,6 +50,7 @@ export interface WriteTransport {
   createPage(projectid: string, title: string, alias: string | null): Promise<CreatePageResult>;
   setPageSettings(pageid: string, title: string | null, descr: string | null, alias: string | null): Promise<SetPageSettingsResult>;
   deletePage(pageid: string): Promise<DeletePageResult>;
+  setSiteSettings?(projectid: string, patch: Record<string, string>): Promise<SetSiteSettingsResult>;
   addBlock(pageid: string, block_type: string, position: number | null): Promise<AddBlockResult>;
   importZeroBlock(pageid: string, json: unknown, position: number | null): Promise<ImportZeroblockResult>;
   getZeroBlock?(pageid: string, recordid: string): Promise<unknown>;

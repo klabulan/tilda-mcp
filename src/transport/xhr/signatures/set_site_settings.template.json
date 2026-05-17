@@ -1,0 +1,24 @@
+{
+  "action": "set_site_settings",
+  "method": "POST",
+  "url": "https://tilda.ru/projects/submit/",
+  "headers_required": ["Cookie", "Origin", "Referer"],
+  "content_type": "application/x-www-form-urlencoded",
+  "body_template": "comm=saveprojectsettings&projectid={{projectid}}&csrf=&{{field1}}={{val1}}&{{field2}}={{val2}}...",
+  "response_format": "text — 'OK' on success",
+  "known_fields": {
+    "basic": ["title", "descr", "alias", "customdomain", "indexpageid", "headerpageid", "footerpageid"],
+    "typography": ["headlinefont", "textfont", "headlinefontweight", "headlinefontsize", "textfontweight", "textfontsize", "linklineheight", "fontsswap", "typekitid"],
+    "colors": ["headlinecolor", "textcolor", "linkcolor", "bgcolor"],
+    "custom_assets": ["customcssfile (URL to uploaded .css)", "customjsfile", "favicon"],
+    "scripts": ["script_head", "script_body", "script_before_close_body (TBD — capture during 'Вставка кода' tab fill)"]
+  },
+  "notes": [
+    "Tilda's save form has ~40+ fields. Sending only a subset works — Tilda merges with current values.",
+    "customcssfile expects a URL to a .css file in Tilda CDN. Use upload_file (upload an image-like asset with .css extension).",
+    "headlinefont / textfont accept: TildaSans (default), Arial, Helvetica, Georgia, plus any Google/Adobe-Typekit family name.",
+    "After updating site settings, all pages need to be re-published for changes to land on CDN."
+  ],
+  "captured_at": "2026-05-17",
+  "captured_against": "tilda.ru"
+}
