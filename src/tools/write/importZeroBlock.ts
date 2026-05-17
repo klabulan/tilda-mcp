@@ -4,8 +4,13 @@ import { log } from "../../logging.js";
 
 export const importZeroBlockSchema = z.object({
   pageid: z.string().describe("Tilda page id"),
-  zero_block_json: z.unknown().describe("Zero Block JSON produced by figma-extractor (schema TBD in t02)"),
-  position: z.number().int().nullable().optional().describe("0-based insertion index; null/omit → append"),
+  zero_block_json: z.unknown().describe(
+    "Either {recordid: string, code: <ZB JSON>} OR a single ZB JSON object IF recordid passed separately. "
+    + "Code schema: { \"0\": {elem_id, elem_type: 'text'|'shape'|'image', top, left, width, height, ...}, "
+    + "  \"1\": {...}, ..., ab_height, ab_bgcolor, timestamp, meta: {feeds:{}} } "
+    + "See src/transport/xhr/signatures/import_zeroblock.template.json for full field reference."
+  ),
+  position: z.number().int().nullable().optional().describe("(reserved — unused for now; ZB is replaced fully)"),
 });
 
 export async function handleImportZeroBlock(params: z.infer<typeof importZeroBlockSchema>): Promise<string> {

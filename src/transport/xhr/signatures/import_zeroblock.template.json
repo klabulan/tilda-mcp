@@ -1,0 +1,36 @@
+{
+  "action": "import_zeroblock",
+  "method": "POST",
+  "url": "https://tilda.ru/zero/submit/",
+  "headers_required": ["Cookie", "Origin", "Referer"],
+  "content_type": "multipart/form-data",
+  "fields": {
+    "comm": "savezerocode",
+    "pageid": "{{pageid}}",
+    "recordid": "{{recordid}}",
+    "onlythisfield": "code",
+    "fromzero": "yes",
+    "code": "{{zero_block_json_stringified}}",
+    "zb_grid": "reset"
+  },
+  "code_schema": {
+    "description": "JSON object with numeric string keys (\"0\", \"1\", ...) for each element, plus artboard-level fields at the same level. Tilda merges this with any existing record content (replaces fully).",
+    "element_fields": {
+      "common": ["elem_id", "elem_type", "top", "left", "width", "height", "zindex", "hidden", "leftunits", "topunits", "widthunits", "heightunits"],
+      "text_specific": ["text", "fontsize", "color", "fontfamily", "lineheight", "fontweight", "shadow_text_opacity", "textfit", "valign", "opacity"],
+      "shape_specific": ["figure", "bgcolor", "borderradius", "layer"],
+      "image_specific": ["img", "imagefit", "imageposition", "borderradius", "filewidth", "fileheight", "heightmode"]
+    },
+    "artboard_fields": ["ab_height", "ab_bgcolor", "ab_filteropacity", "ab_filteropacity2", "ab_bgattachment", "ab_bgposition", "ab_valign", "ab_upscale"],
+    "meta_fields": ["groups", "timestamp", "meta"],
+    "elem_id_convention": "Unix timestamp ms as decimal string, must be unique within the block"
+  },
+  "response_format": "text — \"OK\" on success",
+  "notes": [
+    "Read companion: POST /zero/get/ + comm=getzerocode returns the same JSON shape (use for read-modify-write).",
+    "Tilda accepts unit values either as numeric strings ('250') or with explicit unit ('250px') via the *units fields.",
+    "Artboard-level fields control the Zero Block canvas (height, bg, etc.) — separate from elements."
+  ],
+  "captured_at": "2026-05-17",
+  "captured_against_tilda_host": "tilda.ru"
+}

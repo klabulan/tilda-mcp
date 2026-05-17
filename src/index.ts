@@ -14,6 +14,7 @@ import { setPageSettingsSchema, handleSetPageSettings } from "./tools/write/setP
 import { deletePageSchema, handleDeletePage } from "./tools/write/deletePage.js";
 import { addBlockSchema, handleAddBlock } from "./tools/write/addBlock.js";
 import { importZeroBlockSchema, handleImportZeroBlock } from "./tools/write/importZeroBlock.js";
+import { getZeroBlockSchema, handleGetZeroBlock } from "./tools/write/getZeroBlock.js";
 import { editBlockSchema, handleEditBlock } from "./tools/write/editBlock.js";
 import { publishSchema, handlePublish } from "./tools/write/publish.js";
 import { healthCheckSchema, handleHealthCheck } from "./tools/helpers/healthCheck.js";
@@ -22,7 +23,7 @@ import { resolveCaptchaInteractiveSchema, handleResolveCaptchaInteractive } from
 import { dumpTransportLogSchema, handleDumpTransportLog } from "./tools/helpers/dumpTransportLog.js";
 import { disposeTransport } from "./transport/factory.js";
 
-const TOOL_COUNT = 16;
+const TOOL_COUNT = 17;
 
 function createMcpServer(): McpServer {
   const server = new McpServer({
@@ -68,9 +69,13 @@ function createMcpServer(): McpServer {
     addBlockSchema.shape,
     async (p) => ({ content: [{ type: "text", text: await handleAddBlock(p) }] }));
 
-  server.tool("import_zeroblock", "Импортировать содержимое в Zero Block (STUB — endpoint TBD).",
+  server.tool("import_zeroblock", "Залить контент в Zero Block (text/shape/image elements + artboard). Полная замена существующего content.",
     importZeroBlockSchema.shape,
     async (p) => ({ content: [{ type: "text", text: await handleImportZeroBlock(p) }] }));
+
+  server.tool("get_zeroblock", "Прочитать текущий контент Zero Block (для read-modify-write).",
+    getZeroBlockSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleGetZeroBlock(p) }] }));
 
   server.tool("edit_block", "Изменить содержимое существующего блока (STUB — endpoint TBD).",
     editBlockSchema.shape,
@@ -158,7 +163,7 @@ async function main() {
     const server = createMcpServer();
     const transport = new StdioServerTransport();
     await server.connect(transport);
-    console.error(`[tilda-mcp@fork] Сервер запущен (stdio). ${TOOL_COUNT} инструментов (5 read + 7 write + 4 helpers).`);
+    console.error(`[tilda-mcp@fork] Сервер запущен (stdio). ${TOOL_COUNT} инструментов (5 read + 8 write + 4 helpers).`);
   }
 }
 

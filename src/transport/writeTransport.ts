@@ -48,6 +48,7 @@ export interface WriteTransport {
   deletePage(pageid: string): Promise<DeletePageResult>;
   addBlock(pageid: string, block_type: string, position: number | null): Promise<AddBlockResult>;
   importZeroBlock(pageid: string, json: unknown, position: number | null): Promise<ImportZeroblockResult>;
+  getZeroBlock?(pageid: string, recordid: string): Promise<unknown>;
   editBlock(blockid: string, patch: unknown): Promise<void>;
   publish(pageid: string): Promise<PublishResult>;
   healthCheck(): Promise<TransportHealth>;

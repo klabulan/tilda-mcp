@@ -84,6 +84,35 @@ export class XhrTransport implements WriteTransport {
     return { status: res.status, text };
   }
 
+  /** multipart/form-data POST — required by the ZB editor endpoints (/zero/get/, /zero/submit/). */
+  private async postMultipart(path: string, fields: Record<string, string>): Promise<{ status: number; text: string }> {
+    if (!this.cookieHeader) throw new Error("XhrTransport not initialised — call init() first");
+    const boundary = `----TildaMcpFormBoundary${Math.random().toString(16).slice(2)}`;
+    const parts: string[] = [];
+    for (const [k, v] of Object.entries(fields)) {
+      parts.push(`--${boundary}\r\nContent-Disposition: form-data; name="${k}"\r\n\r\n${v}\r\n`);
+    }
+    parts.push(`--${boundary}--\r\n`);
+    const body = parts.join("");
+    const res = await fetch(`${BASE_URL}${path}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": `multipart/form-data; boundary=${boundary}`,
+        "Cookie": this.cookieHeader,
+        "Origin": BASE_URL,
+        "Referer": `${BASE_URL}/`,
+        "User-Agent": REALISTIC_UA,
+        "X-Requested-With": "XMLHttpRequest",
+        "Accept": "application/json, text/plain, */*",
+      },
+      body,
+    });
+    const rawText = await res.text();
+    const text = rawText.replace(/^<!--tlp-->\s*/, "");
+    if (!res.ok) throw new Error(`Tilda XHR ${res.status} ${res.statusText} on ${path}: ${text.slice(0, 200)}`);
+    return { status: res.status, text };
+  }
+
   async createPage(projectid: string, title: string, alias: string | null): Promise<CreatePageResult> {
     // Tilda's create-page = duplicate a template. Template 1231 = Blank.
     const body = new URLSearchParams({
@@ -191,11 +220,47 @@ export class XhrTransport implements WriteTransport {
     return { block_id: m[1] };
   }
 
-  async importZeroBlock(): Promise<ImportZeroblockResult> {
-    throw new TransportNotImplementedError(
-      "xhr",
-      "importZeroBlock — Zero Block content endpoints not yet captured. Run scripts/tilda/explore7_zeroblock_setdata.mjs."
-    );
+  async importZeroBlock(pageid: string, json: unknown, _position: number | null): Promise<ImportZeroblockResult> {
+    // Required ZB-save fields:
+    //   comm=savezerocode, pageid, recordid, onlythisfield=code, fromzero=yes,
+    //   code=<stringified JSON>, zb_grid=reset
+    // The caller is expected to pass `recordid` either as `json.recordid` or wrap as { recordid, code }.
+    const payload = (json && typeof json === "object" && "code" in (json as Record<string, unknown>))
+      ? (json as { recordid?: string; code: unknown })
+      : { recordid: undefined as string | undefined, code: json };
+
+    if (!payload.recordid) {
+      throw new Error("import_zeroblock requires `recordid` (either as json.recordid or fetch via getZeroBlock first)");
+    }
+    const codeStr = typeof payload.code === "string" ? payload.code : JSON.stringify(payload.code);
+
+    const { text } = await this.postMultipart("/zero/submit/", {
+      comm: "savezerocode",
+      pageid,
+      recordid: payload.recordid,
+      onlythisfield: "code",
+      fromzero: "yes",
+      code: codeStr,
+      zb_grid: "reset",
+    });
+    const ok = text.trim().toUpperCase().startsWith("OK");
+    if (!ok) throw new Error(`import_zeroblock unexpected response: "${text.slice(0, 200)}"`);
+    log("info", "xhr.import_zeroblock", `Saved ZB content for record ${payload.recordid} on page ${pageid} (${codeStr.length} bytes)`);
+    return { block_id: payload.recordid, success: true, log: [`POST /zero/submit/ savezerocode ${codeStr.length}b → OK`] };
+  }
+
+  /** Read current Zero Block content. Returned JSON conforms to import_zeroblock's `code` schema. */
+  async getZeroBlock(pageid: string, recordid: string): Promise<unknown> {
+    const { text } = await this.postMultipart("/zero/get/", {
+      comm: "getzerocode",
+      pageid,
+      recordid,
+    });
+    try {
+      return JSON.parse(text);
+    } catch {
+      throw new Error(`getZeroBlock non-JSON response: ${text.slice(0, 200)}`);
+    }
   }
 
   async editBlock(): Promise<void> {
