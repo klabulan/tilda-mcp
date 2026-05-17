@@ -9,6 +9,7 @@ import {
   getPageSchema, handleGetPage,
   getPageExportSchema, handleGetPageExport,
 } from "./tools/read/pages.js";
+import { listBlockTemplatesSchema, handleListBlockTemplates } from "./tools/read/listBlockTemplates.js";
 import { createPageSchema, handleCreatePage } from "./tools/write/createPage.js";
 import { setPageSettingsSchema, handleSetPageSettings } from "./tools/write/setPageSettings.js";
 import { deletePageSchema, handleDeletePage } from "./tools/write/deletePage.js";
@@ -23,7 +24,7 @@ import { resolveCaptchaInteractiveSchema, handleResolveCaptchaInteractive } from
 import { dumpTransportLogSchema, handleDumpTransportLog } from "./tools/helpers/dumpTransportLog.js";
 import { disposeTransport } from "./transport/factory.js";
 
-const TOOL_COUNT = 17;
+const TOOL_COUNT = 18;
 
 function createMcpServer(): McpServer {
   const server = new McpServer({
@@ -51,6 +52,10 @@ function createMcpServer(): McpServer {
   server.tool("get_page_export", "Экспорт страницы для самостоятельного хостинга.",
     getPageExportSchema.shape,
     async (p) => ({ content: [{ type: "text", text: await handleGetPageExport(p) }] }));
+
+  server.tool("list_block_templates", "Каталог 806 Tilda T-блоков (cover, form, popup, gallery, slider, menu, ...). Bundled offline; refresh via 'npm run refresh:templates'. Use this to discover block_type values for add_block instead of guessing.",
+    listBlockTemplatesSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleListBlockTemplates(p) }] }));
 
   // --- 7 write tools (fork additions; XHR-RE transport against tilda.ru editor endpoints) ---
   server.tool("create_page", "Создать новую пустую страницу в проекте (template Blank).",
@@ -163,7 +168,7 @@ async function main() {
     const server = createMcpServer();
     const transport = new StdioServerTransport();
     await server.connect(transport);
-    console.error(`[tilda-mcp@fork] Сервер запущен (stdio). ${TOOL_COUNT} инструментов (5 read + 8 write + 4 helpers).`);
+    console.error(`[tilda-mcp@fork] Сервер запущен (stdio). ${TOOL_COUNT} инструментов (6 read + 8 write + 4 helpers).`);
   }
 }
 

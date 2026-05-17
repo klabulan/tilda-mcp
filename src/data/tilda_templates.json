@@ -1,0 +1,6450 @@
+[
+  {
+    "tplid": "18",
+    "code": "CR01",
+    "title": "Обложка: заголовок, подзаголовок и раздел",
+    "descr": "фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "14",
+    "code": "CR02",
+    "title": "Обложка: заголовок и описание",
+    "descr": "фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "46",
+    "code": "CR04",
+    "title": "Обложка: заголовок и подзаголовок",
+    "descr": "фон: изображение",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "114",
+    "code": "CR06",
+    "title": "Логотип на фоне",
+    "descr": "фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "167",
+    "code": "CR07",
+    "title": "Обложка: заголовок, подзаголовок и раздел",
+    "descr": "фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "168",
+    "code": "CR08",
+    "title": "Обложка: заголовок, подзаголовок и раздел",
+    "descr": "фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "995",
+    "code": "CR09",
+    "title": "Обложка с отступами по краям",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "192",
+    "code": "CR10",
+    "title": "Обложка: заголовок, подзаголовок и раздел",
+    "descr": "фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "207",
+    "code": "CR11",
+    "title": "Обложка: заголовок, подзаголовок и раздел",
+    "descr": "фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "213",
+    "code": "CR12",
+    "title": "Обложка с одной или двумя кнопками",
+    "descr": "выравнивание по левому краю, фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "204",
+    "code": "CR15",
+    "title": "Обложка с одной или двумя кнопками",
+    "descr": "выравнивание по левому краю, фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "205",
+    "code": "CR16",
+    "title": "Обложка с одной или двумя кнопками",
+    "descr": "выравнивание по центру, фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "206",
+    "code": "CR17",
+    "title": "Обложка с одной или двумя кнопками",
+    "descr": "выравнивание по центру, заголовок и раздел, фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "229",
+    "code": "CR18",
+    "title": "Обложка: цифра и заголовок",
+    "descr": "фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "244",
+    "code": "CR19",
+    "title": "Обложка: логотип, заголовок и подзаголовок",
+    "descr": "фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "338",
+    "code": "CR19A",
+    "title": "Обложка: логотип, заголовок и подзаголовок + кнопка",
+    "descr": "фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "274",
+    "code": "CR20",
+    "title": "Обложка с автором и датой",
+    "descr": "обложка для статей с фото автора и датой публикации",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "275",
+    "code": "CR21",
+    "title": "Обложка с заголовком и кнопкой Play",
+    "descr": "фон: изображение или видео. Есть возможность показать видео поверх обложки",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "286",
+    "code": "CR22",
+    "title": "Обложка с кнопкой Play, заголовком и подзаголовком",
+    "descr": "фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "986",
+    "code": "CR22A",
+    "title": "Обложка с кнопкой и кнопкой Play",
+    "descr": "фон: изображение или видео. Есть возможность показать видео поверх обложки",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "448",
+    "code": "CR23",
+    "title": "Обложка для приложения или сервиса: скриншот, заголовок, описание, кнопка",
+    "descr": "на передний план можно загрузить любое изображение",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1047",
+    "code": "CR26N",
+    "title": "Обложка с полем ввода",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "716",
+    "code": "CR26AN",
+    "title": "Обложка с несколькими полями для ввода",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "289",
+    "code": "CR27",
+    "title": "Обложка с выделенным текстом",
+    "descr": "Фон: изображение или видео. Настраиваемый цвет плашки",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "282",
+    "code": "CR28",
+    "title": "Обложка с текстом на плашке",
+    "descr": "Фон: изображение или видео. Настраиваемый цвет плашки",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "734",
+    "code": "CR30N",
+    "title": "Промо слайдер",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "337",
+    "code": "CR31",
+    "title": "Обложка с фото автора",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "712",
+    "code": "CR32N",
+    "title": "Обложка с формой справа",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "391",
+    "code": "CR33",
+    "title": "Обложка с кнопками  Apple Store и Google Play",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1016",
+    "code": "CR34N",
+    "title": "Обложка с таймером и формой подписки",
+    "descr": "опционально: логотип, заголовок, описание, второе описание и текст",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "415",
+    "code": "CR35",
+    "title": "Обложка с таймером и кнопками",
+    "descr": "опционально: логотип, заголовок, описание, второе описание и текст",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "813",
+    "code": "CR36",
+    "title": "Обложка с изображением/Youtube видео и формой в двух колонках",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1060",
+    "code": "CR37N",
+    "title": "Обложка с расписанием",
+    "descr": "фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1065",
+    "code": "CR38N",
+    "title": "Обложка с расписанием",
+    "descr": "горизонтальная, фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "891",
+    "code": "CR40",
+    "title": "Узкая обложка с заголовком и описанием",
+    "descr": "фон: изображение или видео",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "906",
+    "code": "CR41",
+    "title": "Обложка с заголовком и кнопкой Play",
+    "descr": "фон: изображение или видео. Есть возможность показать видео поверх обложки",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1126",
+    "code": "CR42N",
+    "title": "Обложка: заголовок, подзаголовок и раздел",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "941",
+    "code": "CR43",
+    "title": "Обложка со скошенной картинкой",
+    "descr": "Заголовок, кнопка, картинка",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "950",
+    "code": "CR44",
+    "title": "Текстовая обложка",
+    "descr": "Заголовок, описание, цветовой фон",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "996",
+    "code": "CR45",
+    "title": "Обложка: текст и кнопка на изображении",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "997",
+    "code": "CR46",
+    "title": "Обложка: заголовок, подзаголовок, кнопки и колонки",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1001",
+    "code": "CR47",
+    "title": "Обложка с изображением внизу",
+    "descr": "Заголовок, описание, одна или две кнопки",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1127",
+    "code": "CR48",
+    "title": "Обложка в две колонки с изображением внизу",
+    "descr": "Заголовок, описание, одна или две кнопки",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1120",
+    "code": "CR49",
+    "title": "Обложка в две колонки",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1241",
+    "code": "CR50",
+    "title": "Обложка: текст и изображение в две колонки",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1241_0",
+    "code": "CR50A",
+    "title": "Обложка: текст и изображение в две колонки",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1241_1",
+    "code": "CR50B",
+    "title": "Обложка: текст и изображение в две колонки",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1241_2",
+    "code": "CR50C",
+    "title": "Обложка: текст и изображение в две колонки",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1241_3",
+    "code": "CR50D",
+    "title": "Обложка: текст и изображение в две колонки",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1241_4",
+    "code": "CR50E",
+    "title": "Обложка: текст и изображение в две колонки",
+    "descr": "",
+    "category": "cover",
+    "has_bg": true
+  },
+  {
+    "tplid": "1391",
+    "code": "CR150",
+    "title": "Обложка с заголовком, подзаголовком и преимуществами",
+    "descr": "Фоновое изображение или видео",
+    "category": "cover",
+    "has_bg": false
+  },
+  {
+    "tplid": "1401",
+    "code": "CR151",
+    "title": "Обложка с заголовком, подзаголовком и карточкой",
+    "descr": "Фоновое изображение или видео",
+    "category": "cover",
+    "has_bg": false
+  },
+  {
+    "tplid": "1411",
+    "code": "CR152",
+    "title": "Обложка с заголовком и описанием на карточке",
+    "descr": "Фоновое изображение или видео",
+    "category": "cover",
+    "has_bg": false
+  },
+  {
+    "tplid": "1421",
+    "code": "CR153",
+    "title": "Обложка для страницы товара",
+    "descr": "Фоновое изображение или видео",
+    "category": "cover",
+    "has_bg": false
+  },
+  {
+    "tplid": "1431",
+    "code": "CR154",
+    "title": "Обложка с крупным фото продукта и цифрой",
+    "descr": "",
+    "category": "cover",
+    "has_bg": false
+  },
+  {
+    "tplid": "1441",
+    "code": "CR155",
+    "title": "Обложка с заголовком, рейтингом и изображением",
+    "descr": "",
+    "category": "cover",
+    "has_bg": false
+  },
+  {
+    "tplid": "1451",
+    "code": "CR156",
+    "title": "Обложка с заголовком, метрикой и изображением",
+    "descr": "",
+    "category": "cover",
+    "has_bg": false
+  },
+  {
+    "tplid": "1461",
+    "code": "CR157",
+    "title": "Обложка с заголовком и описанием на прозрачной подложке",
+    "descr": "Фоновое изображение или видео",
+    "category": "cover",
+    "has_bg": false
+  },
+  {
+    "tplid": "1471",
+    "code": "CR158",
+    "title": "Обложка с заголовком, хлебными крошками и изображением снизу",
+    "descr": "",
+    "category": "cover",
+    "has_bg": false
+  },
+  {
+    "tplid": "1481",
+    "code": "CR160",
+    "title": "Обложка с заголовком и смещенными изображениями",
+    "descr": "",
+    "category": "cover",
+    "has_bg": false
+  },
+  {
+    "tplid": "1491",
+    "code": "CR161",
+    "title": "Обложка с заголовком и описанием на карточке",
+    "descr": "Фоновое изображение или видео",
+    "category": "cover",
+    "has_bg": false
+  },
+  {
+    "tplid": "1501",
+    "code": "CR162",
+    "title": "Обложка с заголовком и плиткой",
+    "descr": "",
+    "category": "cover",
+    "has_bg": false
+  },
+  {
+    "tplid": "1511",
+    "code": "CR163",
+    "title": "Обложка с заголовком и изображениями в две колонки",
+    "descr": "",
+    "category": "cover",
+    "has_bg": false
+  },
+  {
+    "tplid": "1521",
+    "code": "CR164",
+    "title": "Обложка: текст и карточки на изображении в две колонки",
+    "descr": "",
+    "category": "cover",
+    "has_bg": false
+  },
+  {
+    "tplid": "106",
+    "code": "TX01",
+    "title": "Текст",
+    "descr": "",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "127",
+    "code": "TX02",
+    "title": "Лид (вводный текст)",
+    "descr": "",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "37",
+    "code": "TX05",
+    "title": "Узкий текстовый блок",
+    "descr": "выравнивание по центру",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "56",
+    "code": "TX08",
+    "title": "Мелкий текст",
+    "descr": "",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "61",
+    "code": "TX09",
+    "title": "Текст по центру",
+    "descr": "",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "239",
+    "code": "TX10",
+    "title": "Текст и ключевая фраза",
+    "descr": "",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "267",
+    "code": "TX12",
+    "title": "Заголовок и раскрывающийся текст",
+    "descr": "",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "248",
+    "code": "TX13",
+    "title": "Текст на серой карточке",
+    "descr": "опционально: рамка",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "179",
+    "code": "TX14",
+    "title": "Текстовый блок на фоне изображения или видео",
+    "descr": "опционально: заголовок, подзаголовок и описание",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "232",
+    "code": "TX15",
+    "title": "Текст на белой подложке",
+    "descr": "фон: изображение или видео",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "585",
+    "code": "TX16N",
+    "title": "Текст в раскрывающихся карточках",
+    "descr": "эффект: слайдинг вниз ",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "668",
+    "code": "TX16N2",
+    "title": "Текст в раскрывающихся карточках на цветном фоне",
+    "descr": "эффект: слайдинг вниз ",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "664",
+    "code": "TX17N",
+    "title": "Вопросы и ответы в рамках",
+    "descr": "",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "665",
+    "code": "TX18N",
+    "title": "Вопросы и ответы в виде чата",
+    "descr": "",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "285",
+    "code": "TX19",
+    "title": "Поле с кодом",
+    "descr": "автоматическая подсветка синтаксиса",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "296",
+    "code": "TX20",
+    "title": "Заметка на подложке",
+    "descr": "три иконки на выбор",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "356",
+    "code": "TX21",
+    "title": "Интервью: вопрос / ответ",
+    "descr": "",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "373",
+    "code": "TX22",
+    "title": "Текст с цифрой в кружке",
+    "descr": "для списка",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "1152",
+    "code": "TX23",
+    "title": "Заголовок и текст",
+    "descr": "",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "1211",
+    "code": "TX24",
+    "title": "Статья",
+    "descr": "",
+    "category": "text",
+    "has_bg": true
+  },
+  {
+    "tplid": "172",
+    "code": "IP101",
+    "title": "Текст среднего размера",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "672",
+    "code": "IP102",
+    "title": "Текст на карточке",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "673",
+    "code": "IP103",
+    "title": "Текст в карточке с обводкой",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "36",
+    "code": "IP201",
+    "title": "Крупный текст с тонкими разделителями",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "676",
+    "code": "IP202",
+    "title": "Текст с разделителями-волнами",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "23",
+    "code": "IP203",
+    "title": "Текст среднего размера",
+    "descr": "тонкие разделители и название раздела",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "50",
+    "code": "IP301",
+    "title": "Текст среднего размера",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "66",
+    "code": "IP302",
+    "title": "Крупный текст",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "67",
+    "code": "IP303",
+    "title": "Текст на цветном фоне",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "101",
+    "code": "IP401",
+    "title": "Средний текст жирного начертания с разделителями",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "184",
+    "code": "IP402",
+    "title": "Крупный текст жирного начертания",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "271",
+    "code": "IP403",
+    "title": "Текст с шарингом в Twitter",
+    "descr": "возможность твитнуть текст ключевой фразы со ссылкой на страницу",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "276",
+    "code": "IP404",
+    "title": "Текст с двойной рамкой",
+    "descr": "настраиваемый цвет текста и обводки",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "372",
+    "code": "IP405",
+    "title": "Текст с линией",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "139",
+    "code": "QT01",
+    "title": "Прямая речь",
+    "descr": "текстовый блок с фотографией персоны",
+    "category": "quote",
+    "has_bg": true
+  },
+  {
+    "tplid": "92",
+    "code": "QT02",
+    "title": "Персона",
+    "descr": "изображение в круге по центру, заголовок, подзаголовок",
+    "category": "quote",
+    "has_bg": true
+  },
+  {
+    "tplid": "165",
+    "code": "QT03",
+    "title": "Персона",
+    "descr": "в линию: изображение, заголовок, описание",
+    "category": "quote",
+    "has_bg": true
+  },
+  {
+    "tplid": "102",
+    "code": "QT04",
+    "title": "Цитата",
+    "descr": "средний текст жирного начертания, разделители и фотография персоны",
+    "category": "quote",
+    "has_bg": true
+  },
+  {
+    "tplid": "171",
+    "code": "QT07",
+    "title": "Цитата",
+    "descr": "",
+    "category": "quote",
+    "has_bg": true
+  },
+  {
+    "tplid": "173",
+    "code": "QT08",
+    "title": "Цитата",
+    "descr": "",
+    "category": "quote",
+    "has_bg": true
+  },
+  {
+    "tplid": "272",
+    "code": "QT11",
+    "title": "Цитата с декоративной кавычкой",
+    "descr": "",
+    "category": "quote",
+    "has_bg": true
+  },
+  {
+    "tplid": "273",
+    "code": "QT12",
+    "title": "Цитата с кавычкой и автором",
+    "descr": "",
+    "category": "quote",
+    "has_bg": true
+  },
+  {
+    "tplid": "278",
+    "code": "QT15",
+    "title": "Цитата с висящей кавычкой",
+    "descr": "",
+    "category": "quote",
+    "has_bg": true
+  },
+  {
+    "tplid": "295",
+    "code": "QT16",
+    "title": "Цитата с кавычкой",
+    "descr": "",
+    "category": "quote",
+    "has_bg": true
+  },
+  {
+    "tplid": "1030",
+    "code": "QT19N",
+    "title": "Цитаты с картинкой снизу и текстом на фоне",
+    "descr": "",
+    "category": "quote",
+    "has_bg": true
+  },
+  {
+    "tplid": "1641",
+    "code": "TX100",
+    "title": "Текст на подложке с ярким фоном",
+    "descr": "",
+    "category": "text",
+    "has_bg": false
+  },
+  {
+    "tplid": "1651",
+    "code": "TX101",
+    "title": "Полноэкранный текстовый блок с крупным заголовком и подписью",
+    "descr": "",
+    "category": "text",
+    "has_bg": false
+  },
+  {
+    "tplid": "1631",
+    "code": "TX102",
+    "title": "Полноэкранный текстовый блок с крупным заголовком и двумя описаниями",
+    "descr": "",
+    "category": "text",
+    "has_bg": false
+  },
+  {
+    "tplid": "1661",
+    "code": "TX103",
+    "title": "Текст на яркой абстрактной иллюстрации",
+    "descr": "",
+    "category": "text",
+    "has_bg": false
+  },
+  {
+    "tplid": "1671",
+    "code": "TX104",
+    "title": "Полноэкранная цитата с подписью автора",
+    "descr": "",
+    "category": "text",
+    "has_bg": false
+  },
+  {
+    "tplid": "4",
+    "code": "VD01",
+    "title": "Видео",
+    "descr": "Youtube, Vimeo, .mp4 и другие",
+    "category": "video",
+    "has_bg": true
+  },
+  {
+    "tplid": "200",
+    "code": "VD04",
+    "title": "Кнопка «Play»",
+    "descr": "Запускает видео. Youtube, Vimeo, .mp4 и другие",
+    "category": "video",
+    "has_bg": true
+  },
+  {
+    "tplid": "1061",
+    "code": "VD06N",
+    "title": "Видео в несколько колонок",
+    "descr": "",
+    "category": "video",
+    "has_bg": true
+  },
+  {
+    "tplid": "259",
+    "code": "VD08",
+    "title": "Текст и видео в две колонки",
+    "descr": "опционально: кнопка. Youtube, Vimeo, .mp4 и другие",
+    "category": "video",
+    "has_bg": true
+  },
+  {
+    "tplid": "331",
+    "code": "VD09",
+    "title": "Popup: Видео",
+    "descr": "Youtube, Vimeo, .mp4 и другие",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "347",
+    "code": "VD11",
+    "title": "Видео c обложкой",
+    "descr": "Youtube, Vimeo, .mp4 и другие",
+    "category": "video",
+    "has_bg": true
+  },
+  {
+    "tplid": "368",
+    "code": "VD12",
+    "title": "Видео слева и изображение справа",
+    "descr": "Youtube, Vimeo, .mp4 и другие",
+    "category": "video",
+    "has_bg": true
+  },
+  {
+    "tplid": "881",
+    "code": "VD13",
+    "title": "YouTube-трансляция с комментариями",
+    "descr": "",
+    "category": "video",
+    "has_bg": true
+  },
+  {
+    "tplid": "937",
+    "code": "VD14",
+    "title": "Плейлист для видеокурса",
+    "descr": "Youtube, Vimeo, .mp4 и другие",
+    "category": "video",
+    "has_bg": true
+  },
+  {
+    "tplid": "1049",
+    "code": "T1049",
+    "title": "VD16 + Youtube",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "126",
+    "code": "DV01",
+    "title": "Линия",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "219",
+    "code": "DV01A",
+    "title": "Короткая линия",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "363",
+    "code": "DV02N",
+    "title": "Линия с полупрозрачными краями",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "70",
+    "code": "DV03",
+    "title": "Тонкая вертикальная линия",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "71",
+    "code": "DV04",
+    "title": "Тильда",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "113",
+    "code": "DV05",
+    "title": "Дополнительный отступ",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "158",
+    "code": "DV06",
+    "title": "Цифра в круге",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "162",
+    "code": "DV07",
+    "title": "Линия и цифра в круге",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1022",
+    "code": "DV08",
+    "title": "Линия с иконкой",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "163",
+    "code": "DV08A",
+    "title": "Линия с открывающей кавычкой",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "164",
+    "code": "DV08B",
+    "title": "Линия с закрывающей кавычкой",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "260",
+    "code": "DV09",
+    "title": "Заголовок в квадрате",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "930",
+    "code": "DV10N",
+    "title": "Три иконки",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "376",
+    "code": "DV11",
+    "title": "Переключатель цвета фона",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "241",
+    "code": "DV11A",
+    "title": "Переключатель цвета фона. Плавная смена цвета ",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "796",
+    "code": "DV12",
+    "title": "Фигурная граница ",
+    "descr": "для разделения секций",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1003",
+    "code": "DV13",
+    "title": "Бегущая строка",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "403",
+    "code": "IX01",
+    "title": "Сетка блога",
+    "descr": "картинка, раздел, заголовок, описание",
+    "category": "index",
+    "has_bg": true
+  },
+  {
+    "tplid": "404",
+    "code": "IX02",
+    "title": "Сетка для блога или портфолио",
+    "descr": "в одну, две, три или четыре колонки",
+    "category": "index",
+    "has_bg": true
+  },
+  {
+    "tplid": "405",
+    "code": "IX03",
+    "title": "Сетка для советуемых также материалов",
+    "descr": "в шесть колонок",
+    "category": "index",
+    "has_bg": true
+  },
+  {
+    "tplid": "142",
+    "code": "IX04",
+    "title": "Полноэкранная сетка",
+    "descr": "картинка, раздел, заголовок, описание",
+    "category": "index",
+    "has_bg": true
+  },
+  {
+    "tplid": "406",
+    "code": "IX05",
+    "title": "Слайдер с баннерами",
+    "descr": "картинка, раздел, заголовок, описание",
+    "category": "index",
+    "has_bg": true
+  },
+  {
+    "tplid": "134",
+    "code": "IX06",
+    "title": "Оглавление",
+    "descr": "список страниц в формате: заголовок, описание",
+    "category": "index",
+    "has_bg": true
+  },
+  {
+    "tplid": "1062",
+    "code": "IX06A",
+    "title": "Оглавление",
+    "descr": "список страниц в формате: заголовок с иконкой, описание ",
+    "category": "index",
+    "has_bg": true
+  },
+  {
+    "tplid": "401",
+    "code": "IX07",
+    "title": "Сетка для блога или портфолио",
+    "descr": "в одну, две, три или четыре колонки",
+    "category": "index",
+    "has_bg": true
+  },
+  {
+    "tplid": "60",
+    "code": "TL01",
+    "title": "Заголовок: 82",
+    "descr": "опционально: подзаголовок, описание",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "30",
+    "code": "TL02",
+    "title": "Заголовок: 64",
+    "descr": "опционально: раздел и подзаголовок",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "255",
+    "code": "TL02A",
+    "title": "Заголовок: 52",
+    "descr": "опционально: раздел и подзаголовок",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "795",
+    "code": "TL02B",
+    "title": "Заголовок: 42, для секций",
+    "descr": "опционально: описание",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "33",
+    "code": "TL03",
+    "title": "Заголовок: 36",
+    "descr": "опционально: раздел и описание",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "43",
+    "code": "TL03A",
+    "title": "Заголовок: 36",
+    "descr": "опционально: описание",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "128",
+    "code": "TL04",
+    "title": "Заголовок: 28",
+    "descr": "выравнивание по левому краю, опционально: подзаголовок",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "40",
+    "code": "TL05",
+    "title": "Заголовок: 14",
+    "descr": "все прописные, опционально: подзаголовок",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "65",
+    "code": "TL06",
+    "title": "Заголовок: 24",
+    "descr": "опционально: подзаголовок",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1581",
+    "code": "TL106",
+    "title": "Заголовок слева, описание справа",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "1591",
+    "code": "TL107",
+    "title": "Заголовок 42 и тег слева",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "1601",
+    "code": "TL108",
+    "title": "Заголовок 42 справа",
+    "descr": "с описанием и надзаголовком",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "1611",
+    "code": "TL109",
+    "title": "Заголовок 42 с надзаголовком и кнопкой",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "1621",
+    "code": "TL110",
+    "title": "Заголовок 42 и тег",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "3",
+    "code": "IM01",
+    "title": "Изображение",
+    "descr": "",
+    "category": "image",
+    "has_bg": true
+  },
+  {
+    "tplid": "160",
+    "code": "IM02",
+    "title": "Полноэкранное изображение",
+    "descr": "",
+    "category": "image",
+    "has_bg": true
+  },
+  {
+    "tplid": "94",
+    "code": "IM04",
+    "title": "Изображение с текстом на полях",
+    "descr": "",
+    "category": "image",
+    "has_bg": true
+  },
+  {
+    "tplid": "237",
+    "code": "IM05",
+    "title": "Текст на картинке с длинным скроллом ",
+    "descr": "фон: изображение или видео",
+    "category": "image",
+    "has_bg": true
+  },
+  {
+    "tplid": "238",
+    "code": "IM06",
+    "title": "Ключевая фраза на картинке с длинным скроллом ",
+    "descr": "image or video background",
+    "category": "image",
+    "has_bg": true
+  },
+  {
+    "tplid": "224",
+    "code": "IM07",
+    "title": "Изображение и описание на полях",
+    "descr": "",
+    "category": "image",
+    "has_bg": true
+  },
+  {
+    "tplid": "159",
+    "code": "IM08",
+    "title": "Изображение в круге",
+    "descr": "",
+    "category": "image",
+    "has_bg": true
+  },
+  {
+    "tplid": "223",
+    "code": "IM10",
+    "title": "Текст и изображение",
+    "descr": "",
+    "category": "image",
+    "has_bg": true
+  },
+  {
+    "tplid": "222",
+    "code": "IM11",
+    "title": "Текст с изображением и описанием на полях",
+    "descr": "",
+    "category": "image",
+    "has_bg": true
+  },
+  {
+    "tplid": "182",
+    "code": "IM13",
+    "title": "Текст, обтекающий изображение",
+    "descr": "",
+    "category": "image",
+    "has_bg": true
+  },
+  {
+    "tplid": "1311",
+    "code": "IM15",
+    "title": "Векторное изображение",
+    "descr": "",
+    "category": "image",
+    "has_bg": true
+  },
+  {
+    "tplid": "2271",
+    "code": "IM150",
+    "title": "Изображение на цветном фоне",
+    "descr": "",
+    "category": "image",
+    "has_bg": false
+  },
+  {
+    "tplid": "2281",
+    "code": "IM151",
+    "title": "Изображение в круге и текст",
+    "descr": "",
+    "category": "image",
+    "has_bg": false
+  },
+  {
+    "tplid": "2291",
+    "code": "IM152",
+    "title": "Изображение со скругленными верхними углами и текст",
+    "descr": "",
+    "category": "image",
+    "has_bg": false
+  },
+  {
+    "tplid": "2301",
+    "code": "IM153",
+    "title": "Изображение с лейблами",
+    "descr": "",
+    "category": "image",
+    "has_bg": false
+  },
+  {
+    "tplid": "2311",
+    "code": "IM154",
+    "title": "Изображение со скругленными верхними углами и короткий текст",
+    "descr": "",
+    "category": "image",
+    "has_bg": false
+  },
+  {
+    "tplid": "1370",
+    "code": "VIBE",
+    "title": "Вайб-блок",
+    "descr": "Сгенерируйте блок по запросу с помощью вайб кода",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "131",
+    "code": "T123",
+    "title": "HTML-код",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "868",
+    "code": "T868",
+    "title": "Popup: HTML-код в попапе",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "215",
+    "code": "T173",
+    "title": "Якорная ссылка",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "270",
+    "code": "T178",
+    "title": "Плавный скролл до локальной якорной ссылки",
+    "descr": "Модификатор",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "125",
+    "code": "T143",
+    "title": "Карта Google или Yandex",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "303",
+    "code": "T198",
+    "title": "Подсказка для ссылки",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "394",
+    "code": "T193",
+    "title": "Модификатор: стиль ссылок",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "602",
+    "code": "T333",
+    "title": "Индикатор прокрутки страницы",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "360",
+    "code": "T228",
+    "title": "Эффект загрузки страницы",
+    "descr": "опционально: индикатор загрузки",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "635",
+    "code": "T635",
+    "title": "Эффект печатной машинки",
+    "descr": "для заголовка",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "674",
+    "code": "T674",
+    "title": "Модификатор: добавление фонового изображения для всей страницы",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "354",
+    "code": "T183",
+    "title": "Триггер: Показывать поп-ап при скролле",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "367",
+    "code": "T188",
+    "title": "Триггер: Показывать поп-ап по таймеру",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "724",
+    "code": "T723",
+    "title": "Триггер: Показывать поп-ап при закрытии окна",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "657",
+    "code": "T657",
+    "title": "Уведомление об использовании куки",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "886",
+    "code": "T886",
+    "title": "Уведомление об использовании куки",
+    "descr": "кнопка согласия справа",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "887",
+    "code": "T887",
+    "title": "Уведомление об использовании куки",
+    "descr": "кнопка закрытия сверху справа",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "972",
+    "code": "T972",
+    "title": "Уведомление об использовании куки с возможностью выбора типа",
+    "descr": "блокирует появление куки от счетчиков и пикселей до потверждения пользователем",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "658",
+    "code": "T658",
+    "title": "Предупреждение о возрастном ограничении",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "305",
+    "code": "T223",
+    "title": "Переадресация на URL",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "263",
+    "code": "T203",
+    "title": "Превращает страницу в презентацию",
+    "descr": "Кнопки вверх/вниз, поддержка клавиатуры",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "121",
+    "code": "T213",
+    "title": "Alias-блок",
+    "descr": "вставка блока с другой страницы без копирования",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "377",
+    "code": "T208",
+    "title": "Печать: разрыв страницы",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "838",
+    "code": "T838",
+    "title": "Поиск по сайту",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "123",
+    "code": "T153",
+    "title": "SoundCloud",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "111",
+    "code": "T218",
+    "title": "Системный комментарий",
+    "descr": "Вставка простого html комментария",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "837",
+    "code": "T301",
+    "title": "Ecwid: интернет-магазин",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "380",
+    "code": "T380",
+    "title": "Ecwid: товары из категории",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "396",
+    "code": "T396",
+    "title": "Нулевой Блок",
+    "descr": "Создай свой уникальный блок",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "803",
+    "code": "T803",
+    "title": "Мультилендинг: динамический текст по параметрам в URL",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "804",
+    "code": "T804",
+    "title": "Геолендинг: динамический текст по геопозиции",
+    "descr": "Меняет слова в зависимости от геопозиции посетителя",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "805",
+    "code": "T805",
+    "title": "Переадресация по языку",
+    "descr": "Перенаправление посетителя на страницу с нужной языковой версией",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "808",
+    "code": "T808",
+    "title": "Переадресация по геопозиции",
+    "descr": "Перенаправление на другой URL",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "809",
+    "code": "T809",
+    "title": "Мультилендинг: скрыть/показать блок по параметру в URL",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "810",
+    "code": "T810",
+    "title": "Геолендинг: скрыть/показать блок по Геопозиции",
+    "descr": "Скрывает или показывает блоки в зависимости от геопозиции пользователя",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "839",
+    "code": "T839",
+    "title": "Мультилендинг: скрыть/показать блок по языку",
+    "descr": "Скрывает или показывает блоки в зависимости от языка браузера посетителя",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "826",
+    "code": "T826",
+    "title": "Эффект галактики для обложек",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "833",
+    "code": "T833",
+    "title": "Анимированное слайдшоу для обложек",
+    "descr": "этот модификатор добавит слайдшоу в обложки",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "854",
+    "code": "T854",
+    "title": "Канал новостей",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "875",
+    "code": "T875",
+    "title": "Защита контента от копирования",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "969",
+    "code": "NY100",
+    "title": "Новогоднее украшение",
+    "descr": "еловые ветки и игрушки внизу экрана",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "970",
+    "code": "NY110",
+    "title": "Новогоднее сообщение",
+    "descr": "изображение Санта Клауса или подарка внизу экрана с новогодним сообщением по клику",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "971",
+    "code": "NY120",
+    "title": "Падающие снежинки на обложке",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "557",
+    "code": "NY130",
+    "title": "Падающий снег на обложке",
+    "descr": "добавляет эффект падающего снега в обложку",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "1084",
+    "code": "T1084",
+    "title": "Модификатор: стиль скроллбара",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "1093",
+    "code": "T1093",
+    "title": "Popup: Zero Block в попапе",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "218",
+    "code": "CL01",
+    "title": "Две колонки",
+    "descr": "",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "22",
+    "code": "CL02",
+    "title": "Две колонки",
+    "descr": "опционально: заголовок и описание",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "24",
+    "code": "CL03",
+    "title": "Три колонки",
+    "descr": "опционально: описание",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "31",
+    "code": "CL04",
+    "title": "Четыре колонки",
+    "descr": "",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "181",
+    "code": "CL05",
+    "title": "Текст и сноска",
+    "descr": "",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "1123",
+    "code": "CL06",
+    "title": "Подзаголовок с разделителем и вводный текст",
+    "descr": "",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "1124",
+    "code": "CL07",
+    "title": "Подзаголовок и текст",
+    "descr": "",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "1032",
+    "code": "CL10N",
+    "title": "Три вертикальных блока в рамках",
+    "descr": "изображение в круге по центру, заголовок и текст",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "1029",
+    "code": "CL12N",
+    "title": "Ключевые параметры в колонках",
+    "descr": "изображение в круге по центру, заголовок, описание, регулируемое количество",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "246",
+    "code": "CL16",
+    "title": "Полноэкранное квадратное изображение и квадратный текстовый блок",
+    "descr": "заголовок и подзаголовок",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "155",
+    "code": "CL17",
+    "title": "Текст и логотипы",
+    "descr": "текст и логотипы справа",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "1033",
+    "code": "CL18N",
+    "title": "Четыре колонки с заголовками",
+    "descr": "",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "1034",
+    "code": "CL19N",
+    "title": "Три колонки с цифрами",
+    "descr": "",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "740",
+    "code": "CL20N",
+    "title": "Галерея c колонкой текста",
+    "descr": "полноэкранный блок",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "799",
+    "code": "CL21N",
+    "title": "Галерея и текстовая колонка с кнопкой",
+    "descr": "",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "180",
+    "code": "CL22",
+    "title": "Изображение справа и текст слева",
+    "descr": "опционально: название раздела и заголовок",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "193",
+    "code": "CL23",
+    "title": "Значимое изображение и текстовый блок",
+    "descr": "",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "195",
+    "code": "CL24",
+    "title": "Текст и изображение в две колонки",
+    "descr": "",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "409",
+    "code": "CL25",
+    "title": "Фрагмент картинки и колонка с текстом",
+    "descr": "",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "256",
+    "code": "CL26",
+    "title": "Изображение и текст с плавающим эффектом",
+    "descr": "опционально: название раздела и заголовок",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "194",
+    "code": "CL27",
+    "title": "Текст в две колонки",
+    "descr": "опционально: заголовок и описание",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "196",
+    "code": "CL28",
+    "title": "Две колонки",
+    "descr": "опционально: заголовок и описание",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "801",
+    "code": "CL34N",
+    "title": "Слайдер: Текст и изображение",
+    "descr": "",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "431",
+    "code": "CL46",
+    "title": "Таблица",
+    "descr": "",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "817",
+    "code": "CL47",
+    "title": "Вкладки с контентом",
+    "descr": "",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "819",
+    "code": "CL48",
+    "title": "Вкладки с контентом",
+    "descr": "вкладки по центру",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "822",
+    "code": "CL49",
+    "title": "Карточки с текстом в три колонки с разделителем",
+    "descr": "неограниченное количество карточек",
+    "category": "columns",
+    "has_bg": true
+  },
+  {
+    "tplid": "1841",
+    "code": "CL100",
+    "title": "Заголовок и текст в две колонки",
+    "descr": "",
+    "category": "columns",
+    "has_bg": false
+  },
+  {
+    "tplid": "1851",
+    "code": "CL101",
+    "title": "Крупный заголовок и четыре колонки текста",
+    "descr": "Полноэкранный блок",
+    "category": "columns",
+    "has_bg": false
+  },
+  {
+    "tplid": "1831",
+    "code": "CL102",
+    "title": "Крупный заголовок и две колонки с текстом и списком",
+    "descr": "",
+    "category": "columns",
+    "has_bg": false
+  },
+  {
+    "tplid": "1861",
+    "code": "CL103",
+    "title": "Таблица с тремя колонками и заголовком",
+    "descr": "",
+    "category": "columns",
+    "has_bg": false
+  },
+  {
+    "tplid": "1871",
+    "code": "CL104",
+    "title": "Таблица с услугами в три колонки",
+    "descr": "",
+    "category": "columns",
+    "has_bg": false
+  },
+  {
+    "tplid": "1881",
+    "code": "CL105",
+    "title": "Информационный блок с текстом и изображениями в колонках",
+    "descr": "",
+    "category": "columns",
+    "has_bg": false
+  },
+  {
+    "tplid": "1891",
+    "code": "CL106",
+    "title": "Таблица с информацией в две колонки",
+    "descr": "",
+    "category": "columns",
+    "has_bg": false
+  },
+  {
+    "tplid": "1901",
+    "code": "CL107",
+    "title": "Информационный блок с текстом, иконкой и изображениями в колонках",
+    "descr": "",
+    "category": "columns",
+    "has_bg": false
+  },
+  {
+    "tplid": "1911",
+    "code": "CL108",
+    "title": "Нумерованный список услуг с заголовком и изображением",
+    "descr": "",
+    "category": "columns",
+    "has_bg": false
+  },
+  {
+    "tplid": "1272",
+    "code": "ME100",
+    "title": "Универсальное меню",
+    "descr": "логотип, пункты меню, описание, кнопки, языки и иконки для магазина или личного кабинета",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1272_0",
+    "code": "ME100A",
+    "title": "Меню для интернет-магазина",
+    "descr": "логотип, пункты меню, личный кабинет, избранное и корзина",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1272_1",
+    "code": "ME100B",
+    "title": "Меню в 12 колонок с отступами и логотипом по центру",
+    "descr": "пункты меню, логотип, поиск и кнопка",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1272_2",
+    "code": "ME100C",
+    "title": "Меню в 12 колонок со скругленными краями",
+    "descr": "логотип, пункты меню и кнопка",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1272_3",
+    "code": "ME100D",
+    "title": " Меню в 12 колонок с логотипом по центру",
+    "descr": "пункты меню, логотип, поиск, личный кабинет и кнопка",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1272_4",
+    "code": "ME100E",
+    "title": "Меню с кнопками социальных сетей",
+    "descr": "логотип, пункты меню, социальные сети и кнопка",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1272_5",
+    "code": "ME100F",
+    "title": "Меню для интернет-магазина с отступами по краям",
+    "descr": "пункты меню, логотип, личный кабинет, избранное, корзина и кнопка",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1272_6",
+    "code": "ME100G",
+    "title": "Меню в 12 колонок с логотипом слева",
+    "descr": "логотип, пункты меню и кнопка",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1272_7",
+    "code": "ME100H",
+    "title": "Меню в 12 колонок с логотипом и кнопками",
+    "descr": "логотип, пункты меню, описание, кнопки, языки и иконки для магазина или личного кабинета",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1272_8",
+    "code": "ME103N",
+    "title": "Меню в одну линию",
+    "descr": "ссылки на страницы по центру",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1365",
+    "code": "ME101N",
+    "title": "Лого в верхнем углу",
+    "descr": "всегда поверх контента",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1366",
+    "code": "ME102N",
+    "title": "Текстовый лейбл в верхнем углу",
+    "descr": "всегда поверх контента",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1367",
+    "code": "ME201N",
+    "title": "Меню с логотипом слева",
+    "descr": "ссылки на страницы справа",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1368",
+    "code": "ME202N",
+    "title": "Меню с логотипом по центру",
+    "descr": "пункты меню с двух сторон",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "462",
+    "code": "ME203",
+    "title": "Меню с логотипом над пунктами меню",
+    "descr": "опционально: горизонтальные линии",
+    "category": "menu",
+    "has_bg": true
+  },
+  {
+    "tplid": "770",
+    "code": "ME203A",
+    "title": "Меню с двумя описаниями",
+    "descr": "опционально: кнопка, иконки соц. сетей",
+    "category": "menu",
+    "has_bg": true
+  },
+  {
+    "tplid": "2082",
+    "code": "ME204N",
+    "title": "Фиксированное меню: логотип, ссылки и переключение языка",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "2083",
+    "code": "ME301N",
+    "title": "Универсальное меню с логотипом слева",
+    "descr": "Логотип, пункты меню, кнопки, иконки соц. сетей, контакты, язык",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "2084",
+    "code": "ME302N",
+    "title": "Универсальное меню с логотипом по центру",
+    "descr": "Логотип, пункты меню, кнопки, иконки соц. сетей, контакты, язык, иконка «гамбургер»",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "461",
+    "code": "ME303",
+    "title": "Универсальное меню с логотипом над пунктами меню ",
+    "descr": "Логотип, пункты меню, кнопки, иконки соц. сетей, контакты, язык",
+    "category": "menu",
+    "has_bg": true
+  },
+  {
+    "tplid": "967",
+    "code": "ME303A",
+    "title": "Универсальное меню с логотипом слева над пунктами меню",
+    "descr": "",
+    "category": "menu",
+    "has_bg": true
+  },
+  {
+    "tplid": "2871",
+    "code": "ME304N",
+    "title": "Универсальное меню в 12 колонок",
+    "descr": "Логотип, пункты меню, кнопки, иконки соц. сетей, контакты, язык",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1362",
+    "code": "ME400",
+    "title": "Универсальное меню «гамбургер»",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "2085",
+    "code": "ME400A",
+    "title": "Всплывающее меню «гамбургер»",
+    "descr": "в 12 колонок, с пунктами меню",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "2091",
+    "code": "ME400B",
+    "title": "Боковое меню «гамбургер»",
+    "descr": "с кнопкой",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "2101",
+    "code": "ME400C",
+    "title": "Полноэкранное меню «гамбургер»",
+    "descr": "с социальными сетями",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "2111",
+    "code": "ME400D",
+    "title": "Боковое меню «гамбургер»",
+    "descr": "выравнивание по левому краю, с логотипом по центру",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "2121",
+    "code": "ME400E",
+    "title": "Полноэкранное прозрачное меню «гамбургер»",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "2131",
+    "code": "ME400F",
+    "title": "Меню «гамбургер» на половину экрана",
+    "descr": "в 12 колонок, с иконкой поиска",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "2432",
+    "code": "ME401N",
+    "title": "Полноэкранное меню «гамбургер»",
+    "descr": "центрированные пункты меню",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "2433",
+    "code": "ME402N",
+    "title": "Меню «гамбургер» на половину экрана ",
+    "descr": "центрированные пункты меню",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "450",
+    "code": "ME403",
+    "title": "Скрытое меню с «гамбургером»",
+    "descr": "может быть вызвано любой ссылкой",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "233",
+    "code": "ME404",
+    "title": "Фиксированное меню «гамбургер» для постов в блоге",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "2434",
+    "code": "ME405N",
+    "title": "Меню с иконкой «гамбургер», скрытыми пунктами, логотипом, кнопками «поделиться» и социальными сетями",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1261",
+    "code": "ME500",
+    "title": "Меню интернет-магазина с каталогом и поиском ",
+    "descr": "",
+    "category": "menu",
+    "has_bg": true
+  },
+  {
+    "tplid": "1261_0",
+    "code": "ME500A",
+    "title": "Меню интернет-магазина с каталогом и поиском ",
+    "descr": "на весь экран",
+    "category": "menu",
+    "has_bg": true
+  },
+  {
+    "tplid": "1261_1",
+    "code": "ME500B",
+    "title": "Меню интернет-магазина с каталогом и поиском ",
+    "descr": "с пунктами меню в бургере",
+    "category": "menu",
+    "has_bg": true
+  },
+  {
+    "tplid": "466",
+    "code": "ME501",
+    "title": "Минималистичное меню с логотипом, ссылками и описанием",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "453",
+    "code": "ME502",
+    "title": "Фиксированное сбоку вертикальное меню",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "975",
+    "code": "ME503",
+    "title": "Меню для мобильной версии",
+    "descr": "зафиксированное снизу экрана",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "794",
+    "code": "ME601",
+    "title": "Меню: второй уровень",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "966",
+    "code": "ME601A",
+    "title": "Меню: второй уровень",
+    "descr": "в несколько колонок с иконками и текстом под пунктами",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "978",
+    "code": "ME601B",
+    "title": "Меню: второй уровень",
+    "descr": "с подменю",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1281",
+    "code": "ME602A",
+    "title": "Вкладки с цветом фона",
+    "descr": "",
+    "category": "menu",
+    "has_bg": true
+  },
+  {
+    "tplid": "1281_0",
+    "code": "ME602B",
+    "title": "Вкладки с обводкой снизу",
+    "descr": "",
+    "category": "menu",
+    "has_bg": true
+  },
+  {
+    "tplid": "607",
+    "code": "ME604",
+    "title": "Навигация с точками",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "758",
+    "code": "ME605",
+    "title": "Хлебные крошки",
+    "descr": "",
+    "category": "menu",
+    "has_bg": true
+  },
+  {
+    "tplid": "976",
+    "code": "ME606",
+    "title": "Меню в виде табов",
+    "descr": "",
+    "category": "menu",
+    "has_bg": true
+  },
+  {
+    "tplid": "383",
+    "code": "ME701",
+    "title": "Модификатор: активный пункт меню",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "815",
+    "code": "ME801",
+    "title": "Плашка с логотипом и телефоном",
+    "descr": "без пунктов меню",
+    "category": "menu",
+    "has_bg": true
+  },
+  {
+    "tplid": "821",
+    "code": "ME802",
+    "title": "Плашка с логотипом, телефоном, адресом и кнопкой",
+    "descr": "без пунктов меню",
+    "category": "menu",
+    "has_bg": true
+  },
+  {
+    "tplid": "830",
+    "code": "ME901",
+    "title": "Фиксированное боковое меню с подразделами",
+    "descr": "",
+    "category": "menu",
+    "has_bg": true
+  },
+  {
+    "tplid": "1921",
+    "code": "ME1000",
+    "title": "Меню с кнопками, лого по центру и разделителем",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1931",
+    "code": "ME1001",
+    "title": "Меню с логотипом, пунктами на плашке и кнопками",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1941",
+    "code": "ME1002",
+    "title": "Меню с кнопками, лого и пунктами в колонке справа",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1951",
+    "code": "ME1003",
+    "title": "Меню с логотипом и пунктами на плашке",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "1961",
+    "code": "ME1004",
+    "title": "Меню с логотипом, пунктами и выбором языка",
+    "descr": "",
+    "category": "menu",
+    "has_bg": false
+  },
+  {
+    "tplid": "144",
+    "code": "FT101",
+    "title": "Лого и текст по центру",
+    "descr": "опционально: заголовок",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "457",
+    "code": "FT102",
+    "title": "Строка ссылок и копирайт",
+    "descr": "опционально: логотип",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "345",
+    "code": "FT201",
+    "title": "Панель: текст и иконки соц. сетей",
+    "descr": "",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "389",
+    "code": "FT202",
+    "title": "Панель: копирайт, строка ссылок и кнопка «наверх»",
+    "descr": "",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "452",
+    "code": "FT203",
+    "title": "Панель: копирайт, иконки соц. сетей и кнопка «наверх»",
+    "descr": "",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "463",
+    "code": "FT204",
+    "title": "Панель: логотип, копирайт и иконки соц. сетей",
+    "descr": "",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "344",
+    "code": "FT301",
+    "title": "Панель с ссылками в 4 колонки",
+    "descr": "",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "420",
+    "code": "FT302",
+    "title": "Панель: логотип, иконки соц. сетей, копирайт и ссылки в 3 колонки",
+    "descr": "",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "464",
+    "code": "FT303",
+    "title": "Панель: логотип, копирайт и ссылки в 2 колонки",
+    "descr": "",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "447",
+    "code": "FT304",
+    "title": "Панель: копирайт, ссылки в 3 колонки, иконки соц. сетей и форма для подписки",
+    "descr": "",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "977",
+    "code": "FT305",
+    "title": "Панель: логотип, текст, ссылки в 3 или 4 колонки и иконки соц. сетей.",
+    "descr": "",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "981",
+    "code": "FT306",
+    "title": "Панель с логотипом, главными и второстепенными пунктами меню",
+    "descr": "",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "455",
+    "code": "FT401",
+    "title": "Иконки соц. сетей с фоновой картинкой",
+    "descr": "",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "460",
+    "code": "FT501",
+    "title": "Панель: большие иконки соц. сетей и копирайт",
+    "descr": "",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "992",
+    "code": "FT601",
+    "title": "Панель: иконка, заголовок, ссылки в виде табов и текст внизу",
+    "descr": "",
+    "category": "footer",
+    "has_bg": true
+  },
+  {
+    "tplid": "2221",
+    "code": "FT700",
+    "title": "Название компании, 3 колонки с адресом, навигацией и соцсетями, копирайт, политика, кнопка наверх",
+    "descr": "",
+    "category": "footer",
+    "has_bg": false
+  },
+  {
+    "tplid": "2231",
+    "code": "FT701",
+    "title": "Заголовок и группа с навигацией",
+    "descr": "",
+    "category": "footer",
+    "has_bg": false
+  },
+  {
+    "tplid": "2241",
+    "code": "FT702",
+    "title": "Панель: Логотип, крупный e-mail и телефон и ссылки в 2 колонки",
+    "descr": "",
+    "category": "footer",
+    "has_bg": false
+  },
+  {
+    "tplid": "2251",
+    "code": "FT703",
+    "title": "Заголовок, описание и кнопка + группа с логотипом и навигацией",
+    "descr": "",
+    "category": "footer",
+    "has_bg": false
+  },
+  {
+    "tplid": "2261",
+    "code": "FT704",
+    "title": "Панель: крупная надпись в цветном шейпе и 3 группы с навигацией",
+    "descr": "",
+    "category": "footer",
+    "has_bg": false
+  },
+  {
+    "tplid": "1088",
+    "code": "T1088",
+    "title": "T1088 Denis Lebedev",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "651_0",
+    "code": "BF901",
+    "title": "Виджет для заказа обратного звонка",
+    "descr": "на мобильном устройстве: вызывает функцию звонка",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "708_0",
+    "code": "BF902N",
+    "title": "Виджет для отправки сообщения",
+    "descr": "опционально: несколько полей для ввода",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "653_0",
+    "code": "BF903",
+    "title": "Виджет с формой подписки",
+    "descr": "",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "2441",
+    "code": "BF201N",
+    "title": "Форма с полем для ввода",
+    "descr": "",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "2451",
+    "code": "BF203N",
+    "title": "Форма с несколькими полями для ввода",
+    "descr": "",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "678",
+    "code": "BF204N",
+    "title": "Вертикальная форма с множеством полей",
+    "descr": "",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "1015",
+    "code": "BF306N",
+    "title": "Форма для подписки",
+    "descr": "опционально: фоновое изображение",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "704",
+    "code": "BF307N",
+    "title": "Форма захвата",
+    "descr": "опционально: несколько полей для ввода",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "720",
+    "code": "BF308N",
+    "title": "Форма захвата на фоновом изображении",
+    "descr": "опционально: несколько полей для ввода",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "722",
+    "code": "BF309N",
+    "title": "Карточка с формой захвата на фоновом изображении",
+    "descr": "опционально: несколько полей для ввода",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "696",
+    "code": "BF310N",
+    "title": "Карточка с формой захвата",
+    "descr": "",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "698",
+    "code": "BF311N",
+    "title": "Форма на обложке с множеством полей",
+    "descr": "",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "700",
+    "code": "BF402N",
+    "title": "Изображение/видео и форма в двух колонках",
+    "descr": "Youtube, Vimeo, .mp4 и другие",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "823",
+    "code": "BF403",
+    "title": "Изображение и форма в двух колонках",
+    "descr": "",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "1040",
+    "code": "QZ101",
+    "title": "Квиз-форма: пошаговая маркетинговая форма для захвата лидов",
+    "descr": "с панелью сверху",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1040_0",
+    "code": "QZ101A",
+    "title": "Квиз-форма: пошаговая маркетинговая форма в две колонки",
+    "descr": " ",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1040_1",
+    "code": "QZ101B",
+    "title": "Квиз-форма: пошаговая маркетинговая форма с консультантом",
+    "descr": "с панелью слева",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1040_2",
+    "code": "QZ101C",
+    "title": "Квиз-форма: с обложкой, ветвлением вопросов и результатом",
+    "descr": " ",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1040_3",
+    "code": "QZ101D",
+    "title": "Квиз-форма: с ветвлением результатов",
+    "descr": " ",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1040_4",
+    "code": "QZ101E",
+    "title": "Квиз-форма: на весь экран",
+    "descr": "с панелью сверху",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1040_5",
+    "code": "QZ101F",
+    "title": "Квиз-форма: в попапе, с консультантом",
+    "descr": "с панелью справа",
+    "category": "popup",
+    "has_bg": true
+  },
+  {
+    "tplid": "1014",
+    "code": "BF501N",
+    "title": "Popup: форма подписки",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "702",
+    "code": "BF502N",
+    "title": "Popup: форма с множеством полей",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "390",
+    "code": "BF503",
+    "title": "Popup: information",
+    "descr": "опционально: заголовок, описание, кнопки и кнопки «поделиться»",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "945",
+    "code": "BF504",
+    "title": "Popup: форма в углу экрана",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "1046",
+    "code": "BF907N",
+    "title": "Фиксированная форма подписки",
+    "descr": "",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "797",
+    "code": "BF908",
+    "title": "Блок для оценки или голосования (Beta)",
+    "descr": "",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "807",
+    "code": "BF913",
+    "title": "Опрос или голосование",
+    "descr": "",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "806",
+    "code": "BF918",
+    "title": "Тест",
+    "descr": "карточки с вариантами ответа, результаты прохождения",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "811",
+    "code": "BF923",
+    "title": "Форма для приема взносов",
+    "descr": "Позволяет задавать произвольную сумму и принимать ее онлайн",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "988",
+    "code": "BF924",
+    "title": "Форма для приема взносов с предустановленными суммами",
+    "descr": "Позволяет задавать произвольную сумму и принимать ее онлайн",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "1681",
+    "code": "BF1000",
+    "title": "Изображение и форма в двух колонках",
+    "descr": "Полноэкранный блок",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "1691",
+    "code": "BF1001",
+    "title": "Карточка с формой и текстом в две колонки",
+    "descr": "",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "1701",
+    "code": "BF1002",
+    "title": "Форма для подписки на ярком фоне",
+    "descr": "Полноэкранный блок",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "1711",
+    "code": "BF1003",
+    "title": "Форма с крупным заголовком на фоне изображения",
+    "descr": "Полноэкранный блок",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "1721",
+    "code": "BF1004",
+    "title": "Форма и текст в две колонки поверх изображения",
+    "descr": "Полноэкранный блок",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "1731",
+    "code": "BF1005",
+    "title": "Карточка с текстом, формой и изображением",
+    "descr": "",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "670",
+    "code": "GL01",
+    "title": "Галерея",
+    "descr": "изображение и/или видео",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "667",
+    "code": "GL02",
+    "title": "Изображения в две колонки",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "147",
+    "code": "GL03",
+    "title": "Изображения в три колонки",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "169",
+    "code": "GL04",
+    "title": "Комбинация изображений",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "170",
+    "code": "GL05",
+    "title": "Изображения в одну строку",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "150",
+    "code": "GL06",
+    "title": "Последовательность слайдов видео и изображений",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "1246",
+    "code": "GL07",
+    "title": "Полноэкранная комбинация из трех изображений",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "746",
+    "code": "GL08N",
+    "title": "Popup: Галерея",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "410",
+    "code": "GL09",
+    "title": "Сравнение картинок до/после",
+    "descr": "опционально: лэйбл",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "1148",
+    "code": "GL10N",
+    "title": "Слайдер картинок",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "552",
+    "code": "GL11",
+    "title": "Полноэкранная комбинация из изображений в колонках",
+    "descr": "1,2,3 или 4 колонки",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "603",
+    "code": "GL12",
+    "title": "Полноэкранная комбинация из изображений с отступами",
+    "descr": "1,2,3 или 4 колонки",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "1231",
+    "code": "GL13N",
+    "title": "Комбинация квадратных изображений",
+    "descr": "12 колонок или на весь экран",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "661",
+    "code": "GL14",
+    "title": "Комбинация больших и маленьких изображений",
+    "descr": "2 или 3 изображения в ряду",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "662",
+    "code": "GL15",
+    "title": "Комбинация из вертикальных и горизонтальных изображений",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "1236",
+    "code": "GL16N",
+    "title": "Комбинация квадратных изображений (одно большое и 4 маленьких)",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "663",
+    "code": "GL17",
+    "title": "Вертикальный список изображений",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "675",
+    "code": "GL19",
+    "title": "Галерея на весь экран",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "604",
+    "code": "GL20",
+    "title": "Галерея с превью боковых фото",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "764",
+    "code": "GL21",
+    "title": "Галерея с текстовой информацией",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "1251",
+    "code": "GL22N",
+    "title": "Комбинация изображений со смещением",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "827",
+    "code": "GL23",
+    "title": "Masonry gallery",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "909",
+    "code": "GL24",
+    "title": "Полноэкранная комбинация больших и маленьких изображений",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "979",
+    "code": "GL25",
+    "title": "Комбинация изображений с выравниванием по высоте",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "989",
+    "code": "GL26",
+    "title": "Галерея с миниатюрами",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "994",
+    "code": "GL27",
+    "title": "Галерея в формате Stories",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": true
+  },
+  {
+    "tplid": "2172",
+    "code": "GL127",
+    "title": "Комбинация изображений с цветным фоном",
+    "descr": "Опционально: заголовок и подзаголовок",
+    "category": "gallery",
+    "has_bg": false
+  },
+  {
+    "tplid": "2181",
+    "code": "GL128",
+    "title": "Комбинация изображений с цветным фоном",
+    "descr": "Опционально: заголовок и подзаголовок",
+    "category": "gallery",
+    "has_bg": false
+  },
+  {
+    "tplid": "2191",
+    "code": "GL129",
+    "title": "Комбинация из квадратных и вертикального изображений изображений с цитатой",
+    "descr": "Опционально: 1,2 или 3 колонки",
+    "category": "gallery",
+    "has_bg": false
+  },
+  {
+    "tplid": "2201",
+    "code": "GL130",
+    "title": "Комбинация из изображений с ритмической композицией",
+    "descr": "Опционально: заголовок и описание изображения",
+    "category": "gallery",
+    "has_bg": false
+  },
+  {
+    "tplid": "2211",
+    "code": "GL131",
+    "title": "Комбинация из 4 квадратных изображений со смещением вокруг заголовка на цветном фоне",
+    "descr": "",
+    "category": "gallery",
+    "has_bg": false
+  },
+  {
+    "tplid": "686",
+    "code": "TE100",
+    "title": "Ссылки на материалы в колонках. Появление информации при наведении",
+    "descr": "две, три или четыре колонки",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "336",
+    "code": "TE105",
+    "title": "Ссылка на материал и информация",
+    "descr": "опционально: появление информации при наведении, анимация",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "694",
+    "code": "TE110",
+    "title": "Ссылки на материалы в полноэкранные колонки с появлением информации при наведении",
+    "descr": "две, три или четыре колонки",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "692",
+    "code": "TE200",
+    "title": "Ссылки на следующие материалы в две колонки",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "117",
+    "code": "TE205",
+    "title": "Квадратная картинка и квадратный текстовый блок",
+    "descr": "заголовок и подзаголовок",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "649",
+    "code": "TE210",
+    "title": "Картинка и текст в колонках",
+    "descr": "две, три или четыре колонки. Опционально: подзаголовок и ссылки",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "688",
+    "code": "TE215",
+    "title": "Картинка и текст в колонках",
+    "descr": "две, три или четыре колонки. Опционально: подзаголовок и ссылки",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "772",
+    "code": "TE220",
+    "title": "Изображение, текст и кнопки в колонках",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "774",
+    "code": "TE225",
+    "title": "Изображение, текст и кнопки в колонках с фоном",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "902",
+    "code": "TE230",
+    "title": "Карточки с расширенными настройками",
+    "descr": "настраиваемая ширина изображения и высота карточки",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "407",
+    "code": "TE300",
+    "title": "Кнопки: предыдущий и следующий пост",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "422",
+    "code": "TE400",
+    "title": "Карточка: текст и изображение",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "424",
+    "code": "TE405",
+    "title": "Карточка: изображение и текст друг под другом",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "374",
+    "code": "TE500",
+    "title": "Ссылка c иконкой",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "650",
+    "code": "TE600",
+    "title": "Колонки с простыми карточками",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "959",
+    "code": "TE605",
+    "title": "Карточки с фоновым изображением и текстом в колонках",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "983",
+    "code": "TE610",
+    "title": "Карточки с фоновым изображением и текстом в колонках",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "829",
+    "code": "TE700",
+    "title": "Изображение, текст и кнопки в плиточной раскладке",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "912",
+    "code": "TE720",
+    "title": "Изображение, текст и кнопки со смещением",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "923",
+    "code": "TE800",
+    "title": "Слайдер с карточками",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "1196",
+    "code": "TE900",
+    "title": "Слайдер с карточками",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "1196_0",
+    "code": "TE900A",
+    "title": "Слайдер с карточками",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "1196_1",
+    "code": "TE900B",
+    "title": "Слайдер с карточками",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "1196_2",
+    "code": "TE900C",
+    "title": "Слайдер с карточками",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "1196_3",
+    "code": "TE900D",
+    "title": "Слайдер с карточками",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "1196_4",
+    "code": "TE900E",
+    "title": "Слайдер с карточками",
+    "descr": "",
+    "category": "slider",
+    "has_bg": true
+  },
+  {
+    "tplid": "1332",
+    "code": "TE1000",
+    "title": "Карточка с двумя изображениями и информацией",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "1971",
+    "code": "TE1001",
+    "title": "Карточки с фоновым изображением и текстом",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "1981",
+    "code": "TE1002",
+    "title": "Карточки с текстом и тегами",
+    "descr": "Опционально: заголовок, подзаголовок и кнопка",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "1341",
+    "code": "TE1003",
+    "title": "Карточки с названием в две колонки",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "1991",
+    "code": "TE1004",
+    "title": "Список с крупными кнопками",
+    "descr": "Опционально: заголовок",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "2001",
+    "code": "TE1005",
+    "title": "Заголовок, подзаголовок, и карточки с текстом и изображениями",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "2011",
+    "code": "TE1006",
+    "title": "Карточки с текстом и кнопкой",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "2021",
+    "code": "TE1007",
+    "title": "Карточка с текстом и изображениями",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "2561",
+    "code": "TE1008",
+    "title": "Карточки с изображением поверх фонового изображения",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "2571",
+    "code": "TE1009",
+    "title": "Карточка с большим изображением, описанием, лейблами и цветным фоном",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "2581",
+    "code": "ТЕ1010",
+    "title": "Заголовок, лейблы на фоне изображения, описание и кнопка",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2591",
+    "code": "TE1011",
+    "title": "Блок с заголовком, изображением и описанием в три колонки",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "2601",
+    "code": "TE1012",
+    "title": "Блок с двумя изображениями, лейблами и кнопкой",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "2611",
+    "code": "TE1013",
+    "title": "Две карточки с изображением, текстом и кнопкой на цветном фоне",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "2621",
+    "code": "TE1014",
+    "title": "Блок с заголовком, описанием и двумя шейпами с текстом и кнопкой внутри",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "2631",
+    "code": "TE1015",
+    "title": "Блок с большим изображением и двумя цветными шейпами со ссылками",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "2641",
+    "code": "TE1016",
+    "title": "Одна большая карточка и две карточки меньше с изображением, текстовой информацией и ссылкой",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "2651",
+    "code": "TE1017",
+    "title": "Два крупных шейпа с текстом и кнопкой внутри",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "2661",
+    "code": "TE1018",
+    "title": "Блок с крупным заголовком, изображением и описанием со ссылкой",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "2671",
+    "code": "TE1019",
+    "title": "Два крупных шейпа с обводкой и иконкой, текстом и ссылкой внутри",
+    "descr": "",
+    "category": "slider",
+    "has_bg": false
+  },
+  {
+    "tplid": "706",
+    "code": "ST100",
+    "title": "Корзина с формой заказа",
+    "descr": "Для одного или нескольких товаров/услуг. С онлайн оплатой или без",
+    "category": "store",
+    "has_bg": false
+  },
+  {
+    "tplid": "782",
+    "code": "ST105",
+    "title": "Платежная система. Прямая оплата без корзины",
+    "descr": "",
+    "category": "store",
+    "has_bg": false
+  },
+  {
+    "tplid": "1002",
+    "code": "ST110",
+    "title": "Избранное",
+    "descr": "",
+    "category": "store",
+    "has_bg": false
+  },
+  {
+    "tplid": "744",
+    "code": "ST200",
+    "title": "Карточка продукта",
+    "descr": "",
+    "category": "store",
+    "has_bg": true
+  },
+  {
+    "tplid": "762",
+    "code": "ST205",
+    "title": "Карточка продукта на всю ширину окна",
+    "descr": "",
+    "category": "store",
+    "has_bg": true
+  },
+  {
+    "tplid": "760",
+    "code": "ST210",
+    "title": "Карточка продукта с залипающей информацией",
+    "descr": "",
+    "category": "store",
+    "has_bg": true
+  },
+  {
+    "tplid": "922",
+    "code": "ST215",
+    "title": "Карточка продукта с фоновым изображением",
+    "descr": "",
+    "category": "store",
+    "has_bg": true
+  },
+  {
+    "tplid": "754",
+    "code": "ST300",
+    "title": "Карточки продуктов + Popup с подробной информацией",
+    "descr": "",
+    "category": "popup",
+    "has_bg": true
+  },
+  {
+    "tplid": "776",
+    "code": "ST305N",
+    "title": "Карточки продуктов с кнопками + Popup с подробной информацией",
+    "descr": "",
+    "category": "popup",
+    "has_bg": true
+  },
+  {
+    "tplid": "778",
+    "code": "ST310N",
+    "title": "Карточки продуктов с кнопками и фоном + Popup с подробной информацией",
+    "descr": "",
+    "category": "popup",
+    "has_bg": true
+  },
+  {
+    "tplid": "786",
+    "code": "ST315N",
+    "title": "Колонки с продуктами на всю ширину экрана + Popup с подробной информацией",
+    "descr": "",
+    "category": "popup",
+    "has_bg": true
+  },
+  {
+    "tplid": "951",
+    "code": "ST320N",
+    "title": "Карточки продуктов с кнопками и фильтрами сбоку + Popup с подробной информацией",
+    "descr": "",
+    "category": "popup",
+    "has_bg": true
+  },
+  {
+    "tplid": "1025",
+    "code": "ST330",
+    "title": "Список товаров в одну колонку + Popup с подробной информацией",
+    "descr": "Можно удалить изображение и описание",
+    "category": "popup",
+    "has_bg": true
+  },
+  {
+    "tplid": "1291",
+    "code": "ST340",
+    "title": "Каталог товаров + страница с подробной информацией",
+    "descr": "(BETA)",
+    "category": "store",
+    "has_bg": true
+  },
+  {
+    "tplid": "2421",
+    "code": "ST340A",
+    "title": "Каталог товаров с боковой панелью + страница с подробной информацией",
+    "descr": "(BETA)",
+    "category": "store",
+    "has_bg": false
+  },
+  {
+    "tplid": "2431",
+    "code": "ST340B",
+    "title": "Каталог товаров в виде списка + страница с подробной информацией",
+    "descr": "(BETA)",
+    "category": "store",
+    "has_bg": false
+  },
+  {
+    "tplid": "2831",
+    "code": "ST340C",
+    "title": "Каталог товаров с разделами",
+    "descr": "(BETA)",
+    "category": "store",
+    "has_bg": false
+  },
+  {
+    "tplid": "2841",
+    "code": "ST340D",
+    "title": "Каталог товаров с разделами и подразделами",
+    "descr": "(BETA)",
+    "category": "store",
+    "has_bg": false
+  },
+  {
+    "tplid": "2851",
+    "code": "ST340E",
+    "title": "Каталог товаров с подразделами в выпадающем списке",
+    "descr": "(BETA)",
+    "category": "store",
+    "has_bg": false
+  },
+  {
+    "tplid": "2861",
+    "code": "ST340F",
+    "title": "Каталог товаров с разделами сверху и на боковой панели",
+    "descr": "(BETA)",
+    "category": "store",
+    "has_bg": false
+  },
+  {
+    "tplid": "784",
+    "code": "ST400N",
+    "title": "Заголовок, цена и кнопка",
+    "descr": "",
+    "category": "store",
+    "has_bg": true
+  },
+  {
+    "tplid": "780",
+    "code": "ST405",
+    "title": "Вертикальная карточка продукта",
+    "descr": "",
+    "category": "store",
+    "has_bg": true
+  },
+  {
+    "tplid": "756",
+    "code": "ST500",
+    "title": "Popup: карточка товара",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "766",
+    "code": "ST505",
+    "title": "Popup: карточка товара",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "750",
+    "code": "ST510",
+    "title": "Горизонтальный popup: карточка товара",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "1122",
+    "code": "ST600",
+    "title": "Popup: подписка на поступление товара",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "474",
+    "code": "AB101",
+    "title": "Большое описание",
+    "descr": "опционально: кнопка",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "467",
+    "code": "AB102",
+    "title": "Заголовок и описание",
+    "descr": "опционально: кнопка",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "468",
+    "code": "AB103",
+    "title": "Надзаголовок, заголовок и описание",
+    "descr": "опционально: кнопка",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "469",
+    "code": "AB104",
+    "title": "Большой заголовок, линия-разделитель и описание",
+    "descr": "опционально: кнопка",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "482",
+    "code": "AB105",
+    "title": "Средний заголовок, линия-разделитель и описание",
+    "descr": "опционально: кнопка",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "473",
+    "code": "AB106",
+    "title": "Маленький заголовок и большое описание",
+    "descr": "опционально: кнопка",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "470",
+    "code": "AB107",
+    "title": "Маленький заголовок, описание и картинка на фоне",
+    "descr": "опционально: кнопка",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "471",
+    "code": "AB108",
+    "title": "Описание и иконки соц. сетей",
+    "descr": "",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "472",
+    "code": "AB201",
+    "title": "Заголовок, описание и три изображения",
+    "descr": "",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "484",
+    "code": "AB301",
+    "title": "Надзаголовок, большой заголовок и контакты",
+    "descr": "опционально: кнопка",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "483",
+    "code": "AB302",
+    "title": "Большое описание и контакты",
+    "descr": "опционально: кнопка",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "485",
+    "code": "AB401",
+    "title": "Надзаголовок, заголовок, изображение и описание",
+    "descr": "опционально: кнопка",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "962",
+    "code": "AB402N",
+    "title": "Изображение в круге, заголовок, подзаголовок и описание",
+    "descr": "опционально: круг, кнопка",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "488",
+    "code": "AB501",
+    "title": "Надзаголовок и большое описание",
+    "descr": "опционально: кнопка",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "489",
+    "code": "AB601",
+    "title": "Заголовок, подзаголовок и описание в две колонки",
+    "descr": "",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "492",
+    "code": "AB602",
+    "title": "Полноэкранное квадратное изображение и квадратный текстовый блок",
+    "descr": "заголовок и подзаголовок",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "480",
+    "code": "AB603",
+    "title": "Две колонки с картинкой и текстом",
+    "descr": "",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "486",
+    "code": "AB604",
+    "title": "Две колонки с четырьмя картинками и текстом",
+    "descr": "",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "478",
+    "code": "AB605",
+    "title": "Две колонки с картинкой и текстом",
+    "descr": "",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "477",
+    "code": "AB606",
+    "title": "Две колонки с картинкой и текстом на фоне",
+    "descr": "",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "814",
+    "code": "AB607",
+    "title": "Комбинация изображения и текста",
+    "descr": "",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "889",
+    "code": "AB608",
+    "title": "Изображение со смещённой карточкой",
+    "descr": "карточка с текстом: слева или справа",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "479",
+    "code": "AB701",
+    "title": "Заголовок, описание и видео",
+    "descr": "Youtube, Vimeo, .mp4 и другие",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "475",
+    "code": "AB801",
+    "title": "Карточка с заголовком и описанием на цветном фоне",
+    "descr": "",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "476",
+    "code": "AB802",
+    "title": "Карточка с заголовком и описанием на фоновом изображении",
+    "descr": "",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "287",
+    "code": "AB901",
+    "title": "Три изображения и текст на подложке",
+    "descr": "",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "677",
+    "code": "AB902",
+    "title": "Комбинация изображений и текст",
+    "descr": "",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "921",
+    "code": "AB903",
+    "title": "Текст и комбинация изображений",
+    "descr": "",
+    "category": "about",
+    "has_bg": true
+  },
+  {
+    "tplid": "1522",
+    "code": "AB1000",
+    "title": "Изображение и колонка с информацией и списком",
+    "descr": "",
+    "category": "about",
+    "has_bg": false
+  },
+  {
+    "tplid": "1361",
+    "code": "AB1001",
+    "title": "Текст с двумя карточками",
+    "descr": "",
+    "category": "about",
+    "has_bg": false
+  },
+  {
+    "tplid": "1531",
+    "code": "AB1002",
+    "title": "Блок с изображением, нумерованным списком и кнопкой",
+    "descr": "",
+    "category": "about",
+    "has_bg": false
+  },
+  {
+    "tplid": "2132",
+    "code": "AB1003",
+    "title": "Изображение, текст и список с разделителями",
+    "descr": "",
+    "category": "about",
+    "has_bg": false
+  },
+  {
+    "tplid": "2141",
+    "code": "AB1004",
+    "title": "Текст и два изображения в колонках",
+    "descr": "",
+    "category": "about",
+    "has_bg": false
+  },
+  {
+    "tplid": "2151",
+    "code": "AB1005",
+    "title": "Изображение, текст и список с разделителями",
+    "descr": "",
+    "category": "about",
+    "has_bg": false
+  },
+  {
+    "tplid": "2161",
+    "code": "AB1006",
+    "title": "Заголовок с описанием и лейблами, изображение снизу",
+    "descr": "",
+    "category": "about",
+    "has_bg": false
+  },
+  {
+    "tplid": "2171",
+    "code": "AB1007",
+    "title": "Блок с заголовком и карточкой с описанием",
+    "descr": "",
+    "category": "about",
+    "has_bg": false
+  },
+  {
+    "tplid": "1541",
+    "code": "AB1009",
+    "title": "Карточка с заголовком, описанием и тремя колонками текста с иконками",
+    "descr": "",
+    "category": "about",
+    "has_bg": false
+  },
+  {
+    "tplid": "1551",
+    "code": "AB1010",
+    "title": "Карточка в две колонки",
+    "descr": "Текст и мини карточка слева и большое изображение справа",
+    "category": "about",
+    "has_bg": false
+  },
+  {
+    "tplid": "1561",
+    "code": "AB1011",
+    "title": "Карточка с большим изображением, заголовком и описанием в две колонки",
+    "descr": "",
+    "category": "about",
+    "has_bg": false
+  },
+  {
+    "tplid": "1571",
+    "code": "AB1012",
+    "title": "Текст и список с разделителями в две колонки",
+    "descr": "",
+    "category": "about",
+    "has_bg": false
+  },
+  {
+    "tplid": "508",
+    "code": "FR101",
+    "title": "Список с галочками",
+    "descr": "3 типа галочек",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1095",
+    "code": "FR102N",
+    "title": "Список с иконками",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "510",
+    "code": "FR103",
+    "title": "Список с цифрами в кружках",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "490",
+    "code": "FR201",
+    "title": "Колонки с большими иконками",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1007",
+    "code": "FR202N",
+    "title": "Колонки с большими иконками и вертикальными линиями",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "499",
+    "code": "FR203",
+    "title": "Две колонки с большими иконками справа",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "497",
+    "code": "FR204",
+    "title": "Две колонки с маленькими иконками",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "491",
+    "code": "FR205",
+    "title": "Колонки с маленькими иконками",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "503",
+    "code": "FR206",
+    "title": "Колонки с маленькими иконками над текстом",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "820",
+    "code": "FR207",
+    "title": "Две колонки с галочками",
+    "descr": "3 типа галочек",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "905",
+    "code": "FR208",
+    "title": "Карточки в две колонки",
+    "descr": "с описанием, изображением и стрелкой",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "509",
+    "code": "FR301",
+    "title": "Список с изображениями",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1066",
+    "code": "FR302N",
+    "title": "Изображение и карточки (иконка, заголовок, описание)",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1008",
+    "code": "FR303N",
+    "title": "Карточки (иконка, заголовок, описание) в две колонки и изображение по центру",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "908",
+    "code": "FR304",
+    "title": "Вкладки с изображениями",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "938",
+    "code": "FR305",
+    "title": "Фоновое изображение и карточки",
+    "descr": "Иконка, заголовок, описание",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1000",
+    "code": "FR306",
+    "title": "Фоновое изображение и список с галочками",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "998",
+    "code": "FR307",
+    "title": "Текст и карточки (иконка, заголовок)",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1115",
+    "code": "FR308",
+    "title": "Изображение и список с галочками",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1110",
+    "code": "FR309",
+    "title": "Изображение снизу и карточки с иконками сверху",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1206",
+    "code": "FR310",
+    "title": "Текст и карточки в две колонки",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "502",
+    "code": "FR401",
+    "title": "Колонки с цифрами в кружочках",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1050",
+    "code": "FR402N",
+    "title": "Колонки с цифрами и горизонтальными линиями",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1052",
+    "code": "FR403N",
+    "title": "Колонки с цифрами и горизонтальными линиями",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1053",
+    "code": "FR404N",
+    "title": "Колонки с маленькими цифрами и вертикальными линиями",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1051",
+    "code": "FR405N",
+    "title": "Колонки с круговыми диаграммами",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "899",
+    "code": "FR406",
+    "title": "Колонки с символами на фоне",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "920",
+    "code": "FR407",
+    "title": "Две колонки с символами на фоне",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1054",
+    "code": "FR501N",
+    "title": "Колонки с цифрами на фоновым изображении",
+    "descr": "",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1031",
+    "code": "FR502N",
+    "title": "Ключевые параметры в колонках c фоновой картинкой",
+    "descr": "опционально: кнопка",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "939",
+    "code": "FR601",
+    "title": "Преимущества в виде галереи",
+    "descr": "Картинка, заголовок, описание",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "940",
+    "code": "FR602",
+    "title": "Плитки с изображением или карточкой",
+    "descr": "Заголовок, описание, картинка (опционально)",
+    "category": "features",
+    "has_bg": true
+  },
+  {
+    "tplid": "1351",
+    "code": "FR700",
+    "title": "Заголовок, описание, ключевые параметры с изображением",
+    "descr": "",
+    "category": "features",
+    "has_bg": false
+  },
+  {
+    "tplid": "1741",
+    "code": "FR701",
+    "title": "Изображение и список с нумерацией",
+    "descr": "",
+    "category": "features",
+    "has_bg": false
+  },
+  {
+    "tplid": "1751",
+    "code": "FR702",
+    "title": "Заголовок и 4 колонки с описанием и крупными числами внизу",
+    "descr": "",
+    "category": "features",
+    "has_bg": false
+  },
+  {
+    "tplid": "1761",
+    "code": "FR703",
+    "title": "Три карточки с изображением и текстом",
+    "descr": "",
+    "category": "features",
+    "has_bg": false
+  },
+  {
+    "tplid": "1771",
+    "code": "FR704",
+    "title": "Описание и 3 крупных преимущества",
+    "descr": "",
+    "category": "features",
+    "has_bg": false
+  },
+  {
+    "tplid": "1781",
+    "code": "FR705",
+    "title": "Заголовок и 3 карточки с числами и описанием",
+    "descr": "",
+    "category": "features",
+    "has_bg": false
+  },
+  {
+    "tplid": "1791",
+    "code": "FR706",
+    "title": "Изображение и 4 преимущества с крупными числами",
+    "descr": "",
+    "category": "features",
+    "has_bg": false
+  },
+  {
+    "tplid": "1801",
+    "code": "FR707",
+    "title": "Заголовок и 3 карточки с описанием и иконками",
+    "descr": "",
+    "category": "features",
+    "has_bg": false
+  },
+  {
+    "tplid": "1811",
+    "code": "FR708",
+    "title": "Изображение и 4 карточки с преимуществами",
+    "descr": "",
+    "category": "features",
+    "has_bg": false
+  },
+  {
+    "tplid": "1821",
+    "code": "FR709",
+    "title": "Изображение и 4 преимущества на цветном фоне",
+    "descr": "",
+    "category": "features",
+    "has_bg": false
+  },
+  {
+    "tplid": "605",
+    "code": "TS101N",
+    "title": "Слайдер с отзывами с картинкой сверху",
+    "descr": "",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "726",
+    "code": "TS102N",
+    "title": "Слайдер с отзывами с картинкой снизу",
+    "descr": "",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "728",
+    "code": "TS103N",
+    "title": "Слайдер с карточками отзывов",
+    "descr": "",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "958",
+    "code": "TS104N",
+    "title": "Слайдер с карточками отзывов",
+    "descr": "с превью боковых слайдов",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "1186",
+    "code": "TS105",
+    "title": "Слайдер с карточками отзывов",
+    "descr": "с превью боковых слайдов",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "525",
+    "code": "TS201",
+    "title": "Отзывы в две колонки",
+    "descr": "",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "528",
+    "code": "TS202",
+    "title": "Отзывы в три колонки",
+    "descr": "",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "533",
+    "code": "TS203",
+    "title": "Отзывы с картинкой сверху и текстом на фоне",
+    "descr": "",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "529",
+    "code": "TS204",
+    "title": "Отзывы в две колонки на speech bubbles",
+    "descr": "",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "530",
+    "code": "TS205",
+    "title": "Отзывы на speech bubbles",
+    "descr": "",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "798",
+    "code": "TS206N",
+    "title": "Слайдер с отзывами с картинкой слева и текстом справа",
+    "descr": "опционально: отразить по горизонтали",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "558",
+    "code": "TS207",
+    "title": "Список отзывов",
+    "descr": "",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "942",
+    "code": "TS208",
+    "title": "Отзывы на обложке",
+    "descr": "",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "659",
+    "code": "TS301N",
+    "title": "Слайдер с отзывами на обложке",
+    "descr": "картинка снизу",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "730",
+    "code": "TS302N",
+    "title": "Слайдер с отзывами на обложке",
+    "descr": "картинка сверху",
+    "category": "testimonials",
+    "has_bg": true
+  },
+  {
+    "tplid": "2371",
+    "code": "TS400",
+    "title": "Три карточки отзывов с рейтингом и аватаром",
+    "descr": "Опционально: заголовок",
+    "category": "testimonials",
+    "has_bg": false
+  },
+  {
+    "tplid": "2381",
+    "code": "TS401",
+    "title": "Отзывы с рейтингом и средней оценкой",
+    "descr": "",
+    "category": "testimonials",
+    "has_bg": false
+  },
+  {
+    "tplid": "2391",
+    "code": "TS402",
+    "title": "Отзывы на цветных карточках",
+    "descr": "",
+    "category": "testimonials",
+    "has_bg": false
+  },
+  {
+    "tplid": "2401",
+    "code": "TS403",
+    "title": "Общий рейтинг и отзывы в две колонки",
+    "descr": "",
+    "category": "testimonials",
+    "has_bg": false
+  },
+  {
+    "tplid": "2411",
+    "code": "TS404",
+    "title": "Отзывы с рейтингом в три колонки",
+    "descr": "",
+    "category": "testimonials",
+    "has_bg": false
+  },
+  {
+    "tplid": "521",
+    "code": "TB101",
+    "title": "Две колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "513",
+    "code": "TB102",
+    "title": "Две колонки с горизонтальными линиями и информацией о персоне",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "523",
+    "code": "TB103",
+    "title": "Две колонки с большим изображением",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "522",
+    "code": "TB104",
+    "title": "Две колонки с горизонтальными линиями и большим изображением в кружке",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "987",
+    "code": "TB105",
+    "title": "Две колонки с надзаголовками и горизонтальной линией",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "514",
+    "code": "TB201",
+    "title": "Таймлайн",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "516",
+    "code": "TB202",
+    "title": "Таймлайн с изображениями",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "517",
+    "code": "TB301",
+    "title": "Карточки в три колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "518",
+    "code": "TB302",
+    "title": "Карточки в три колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "2781",
+    "code": "TB400",
+    "title": "Карточки в 4 колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2791",
+    "code": "TB401",
+    "title": "Цветные карточки в 3 колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2801",
+    "code": "TB402",
+    "title": "Горизонтальные группы событий с текстом и изображениями",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2811",
+    "code": "TB403",
+    "title": "Расписание календарного типа с крупной датой, месяцем и текстом",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2821",
+    "code": "TB404",
+    "title": "Цветные карточки с информацией и кнопкой в 3 колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "524",
+    "code": "TM101",
+    "title": "Персоны: изображение в кружке и информация",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "537",
+    "code": "TM102",
+    "title": "Персоны: квадратное изображение и информация",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "526",
+    "code": "TM103",
+    "title": "Персоны: изображение в кружке и информация",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "527",
+    "code": "TM201",
+    "title": "Персоны: квадратное изображение и информация с линией-разделителем",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "531",
+    "code": "TM301",
+    "title": "Персоны: квадратное изображение и информация в списке",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "982",
+    "code": "TM302",
+    "title": "Персоны: изображение и информация справа",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "532",
+    "code": "TM401",
+    "title": "Персоны: квадратное изображение с информацией при наведении",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "539",
+    "code": "TM402",
+    "title": "Персоны: квадратное изображение и информация в карточках",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "542",
+    "code": "TM501",
+    "title": "Один человек: фоновое изображение и информация",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "543",
+    "code": "TM502",
+    "title": "Один человек: фоновое изображение и информация в карточке",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "544",
+    "code": "TM601",
+    "title": "Один человек: две колонки с картинкой и текстом",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "545",
+    "code": "TM602",
+    "title": "Один человек: две колонки с картинкой и текстом на фоне",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "546",
+    "code": "TM603",
+    "title": "Один человек: полноэкранное квадратное изображение и квадратный текстовый блок",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "2461",
+    "code": "TM700",
+    "title": "Персоны: две карточки с изображением, описанием и тегами",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2471",
+    "code": "TM701",
+    "title": "Один человек с крупной цитатой и 3 изображения команды с описанием",
+    "descr": "Опционально: кнопка",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2481",
+    "code": "TM702",
+    "title": "Один человек, три колонки с изображением и текстом",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2491",
+    "code": "TM703",
+    "title": "Персоны: изображение и карточка с именем",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2501",
+    "code": "TM704",
+    "title": "Цветные карточки с персонами и описанием",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2511",
+    "code": "TM705",
+    "title": "Блок с персонами и нерегулярной сеткой",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2521",
+    "code": "TM706",
+    "title": "Блок с карточками персон",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2531",
+    "code": "TM707",
+    "title": "Блок с горизонтальными карточками персон",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2541",
+    "code": "TM708",
+    "title": "Блок с одной крупной карточкой персоны и двумя маленькими",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2551",
+    "code": "TM709",
+    "title": "Блок с персонами, заголовком и описанием в две колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "547",
+    "code": "HW101",
+    "title": "Центрированный таймлайн с буллетами",
+    "descr": "опционально: картинка",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "565",
+    "code": "HW102",
+    "title": "Центрированный таймлайн с цифрами",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "576",
+    "code": "HW103",
+    "title": "Центрированный таймлайн с цифрами и картинками",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "548",
+    "code": "HW201",
+    "title": "Таймлайн с картинками",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "550",
+    "code": "HW202",
+    "title": "Таймлайн с цифрами слева",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1106",
+    "code": "HW301",
+    "title": "Блоки с таймлайном",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1107",
+    "code": "HW302",
+    "title": "Блоки со стрелочками",
+    "descr": "опционально: заголовок, подзаголовок, описание, иконка",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1108",
+    "code": "HW303",
+    "title": "Блоки с иконками и разрывистой линией",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "566",
+    "code": "HW401",
+    "title": "Блоки с цифрами слева",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "568",
+    "code": "HW402",
+    "title": "Блоки с цифрами сверху",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "575",
+    "code": "HW403",
+    "title": "Блоки с цифрами сверху с выравниванием по левому краю",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "577",
+    "code": "HW404",
+    "title": "Блоки с карточками",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "948",
+    "code": "HW405",
+    "title": "Стилизованные блоки с цифрами сверху",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "2731",
+    "code": "HW500",
+    "title": "Таблица с этапами",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2741",
+    "code": "HW501",
+    "title": "Таймлайн со смещением",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2751",
+    "code": "HW502",
+    "title": "Таймлайн с крупным описанием и изображением",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2761",
+    "code": "HW503",
+    "title": "Цветные карточки с таймлайном на цветном фоне в 4 колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2771",
+    "code": "HW504",
+    "title": "Модули с этапностью на цветном фоне",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "572",
+    "code": "CN101",
+    "title": "Контакты с заголовком и описанием",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "560",
+    "code": "CN102",
+    "title": "Контакты с заголовком",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "573",
+    "code": "CN103",
+    "title": "Контакты с крупными телефоном и e-mail",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "494",
+    "code": "CN104",
+    "title": "Контакты с иконками соц. сетей наверху",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "571",
+    "code": "CN105",
+    "title": "Контакты с крупным адресом",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "551",
+    "code": "CN106",
+    "title": "Контакты с заголовком и крупными телефоном и e-mail",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "574",
+    "code": "CN107",
+    "title": "Контакты с заголовком и крупным адресом",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "578",
+    "code": "CN108",
+    "title": "Контакты с информацией о персоне",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "564",
+    "code": "CN109",
+    "title": "Контакты в одну колонку с логотипом и маленькими заголовками",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "561",
+    "code": "CN201",
+    "title": "Фоновое изображение и контакты в карточке",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "911",
+    "code": "CN202",
+    "title": "Контакты с изображением, заголовком и описанием",
+    "descr": "с ссылками на социальные сети и фоновым изображением",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1056",
+    "code": "CN301N",
+    "title": "Контакты в колонках",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1055",
+    "code": "CN302N",
+    "title": "Контакты в колонках с иконками",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "718",
+    "code": "CN501N",
+    "title": "Контакты и форма в две колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "555",
+    "code": "CN401",
+    "title": "Контакты и карта в две колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "570",
+    "code": "CN402",
+    "title": "Контакты и карта в две колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "433",
+    "code": "CN402A",
+    "title": "Карта Google или Яндекс и блок контактов",
+    "descr": "полноэкранный блок, настраиваемый цвет фона, карта",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "554",
+    "code": "CN403",
+    "title": "Карта с карточкой",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "2321",
+    "code": "CN500",
+    "title": "Контакты с формой, описанием и соцсетями",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2331",
+    "code": "CN501",
+    "title": "Блок с заголовком, описанием и менеджером",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2341",
+    "code": "CN502",
+    "title": "Контакты с иконками, форма и соцсети",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2351",
+    "code": "CN503",
+    "title": "Заголовок, описание, контакты с иконками и изображение",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2361",
+    "code": "CN504",
+    "title": "Контакты в цветном шейпе и форма",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "212",
+    "code": "SM101",
+    "title": "Ссылки на соцсети",
+    "descr": "",
+    "category": "social",
+    "has_bg": true
+  },
+  {
+    "tplid": "1028",
+    "code": "SM102",
+    "title": "Ссылки на соцсети в одну колонку",
+    "descr": "можно добавить свою иконку",
+    "category": "social",
+    "has_bg": true
+  },
+  {
+    "tplid": "1036",
+    "code": "SM103",
+    "title": "Прямоугольные ссылки на соцсети в ряд",
+    "descr": "при необходимости переносятся на новую строку",
+    "category": "social",
+    "has_bg": true
+  },
+  {
+    "tplid": "151",
+    "code": "SM201",
+    "title": "Кнопки поделиться в соц. сетях",
+    "descr": "",
+    "category": "social",
+    "has_bg": true
+  },
+  {
+    "tplid": "132",
+    "code": "SM202",
+    "title": "Стандартные кнопки социальных сетей",
+    "descr": "",
+    "category": "social",
+    "has_bg": true
+  },
+  {
+    "tplid": "381",
+    "code": "SM203",
+    "title": "Кнопки поделиться в соц. сетях, зафиксированные в углу",
+    "descr": "фиксированная позиция в правом верхнем углу",
+    "category": "social",
+    "has_bg": false
+  },
+  {
+    "tplid": "449",
+    "code": "SM301",
+    "title": "Кнопки поделиться в соц. сетях, выровненные по центру экрана и зафиксированные сбоку",
+    "descr": "опционально: появление и скрытие при скролле",
+    "category": "social",
+    "has_bg": false
+  },
+  {
+    "tplid": "365",
+    "code": "SM402",
+    "title": "Popup: VKontakte social plugin",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "802",
+    "code": "SM403",
+    "title": "Лента инстаграм",
+    "descr": "",
+    "category": "social",
+    "has_bg": true
+  },
+  {
+    "tplid": "465",
+    "code": "SM501",
+    "title": "Ссылки на соцсети на всю ширину экрана",
+    "descr": "",
+    "category": "social",
+    "has_bg": true
+  },
+  {
+    "tplid": "865",
+    "code": "SM601",
+    "title": "Комментарии из Facebook и Vkontakte",
+    "descr": "в две колонки",
+    "category": "social",
+    "has_bg": true
+  },
+  {
+    "tplid": "1067",
+    "code": "PL100N",
+    "title": "Карточки с тарифами",
+    "descr": "две, три или четыре колонки",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1068",
+    "code": "PL102N",
+    "title": "Разделенные карточки с иконкой, ценой и описанием",
+    "descr": "две, три или четыре колонки",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1069",
+    "code": "PL105N",
+    "title": "Карточки с ценой и описанием",
+    "descr": "две, три или четыре колонки",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1070",
+    "code": "PL110N",
+    "title": "Карточки с иконкой, ценой и описанием",
+    "descr": "две, три или четыре колонки",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1071",
+    "code": "PL115N",
+    "title": "Карточки с ценой на картинке и описанием",
+    "descr": "две, три или четыре колонки",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1072",
+    "code": "PL120N",
+    "title": "Карточки с ценами на цветном фоне",
+    "descr": "две, три или четыре колонки",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1073",
+    "code": "PL125N",
+    "title": "Карточки с картинкой, текстом и ценами",
+    "descr": "две, три или четыре колонки",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "611",
+    "code": "PL200",
+    "title": "Таблица с ценами на цветном фоне",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "612",
+    "code": "PL205",
+    "title": "Простая таблица с ценами",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "613",
+    "code": "PL210",
+    "title": "Простая таблица с ценами на цветном фоне",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "614",
+    "code": "PL215",
+    "title": "Таблица с ценами и цветными рядами",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "681",
+    "code": "PL300",
+    "title": "Цены и информация",
+    "descr": "три колонки с заголовком, ценой, и описанием",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "792",
+    "code": "PL305",
+    "title": "Цены и информация с горизонтальными линиями",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "812",
+    "code": "PL310",
+    "title": "Цены и информация с горизонтальными линиями",
+    "descr": "две колонки с заголовком, ценой и описанием",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "2031",
+    "code": "PL400",
+    "title": "Карточки с ценой, списком и кнопками",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2041",
+    "code": "PL401",
+    "title": "Горизонтальные карточки с тарифами",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2051",
+    "code": "PL402",
+    "title": "Карточки тарифов с описанием, ценой, списком опций и кнопкой",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2061",
+    "code": "PL403",
+    "title": "Карточки тарифов с описанием, ценой, списком опций и кнопкой",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2071",
+    "code": "PL404",
+    "title": "Карточки тарифов с описанием, ценой, списком опций и кнопкой",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "2081",
+    "code": "PL405",
+    "title": "Карточки тарифов разной ширины со списком опций с разделителями и кнопками",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "594",
+    "code": "PR101",
+    "title": "Логотипы в колонках",
+    "descr": "",
+    "category": "process",
+    "has_bg": true
+  },
+  {
+    "tplid": "595",
+    "code": "PR102",
+    "title": "Логотипы в колонках, разделенные линиями",
+    "descr": "",
+    "category": "process",
+    "has_bg": true
+  },
+  {
+    "tplid": "999",
+    "code": "PR103",
+    "title": "Логотипы партнеров в две колонки",
+    "descr": "с описанием",
+    "category": "process",
+    "has_bg": true
+  },
+  {
+    "tplid": "738",
+    "code": "PR201N",
+    "title": "Логотипы в слайдере",
+    "descr": "",
+    "category": "process",
+    "has_bg": true
+  },
+  {
+    "tplid": "600",
+    "code": "PR301",
+    "title": "Список партнеров",
+    "descr": "",
+    "category": "process",
+    "has_bg": true
+  },
+  {
+    "tplid": "1057",
+    "code": "PR302N",
+    "title": "Информация о партнерах в две колонки",
+    "descr": "",
+    "category": "process",
+    "has_bg": true
+  },
+  {
+    "tplid": "1074",
+    "code": "PR401N",
+    "title": "Логотипы партнеров на фоне",
+    "descr": "четыре или шесть в ряд. Опционально: ссылки",
+    "category": "process",
+    "has_bg": true
+  },
+  {
+    "tplid": "2681",
+    "code": "PR500",
+    "title": "Блок с логотипами партнеров и заголовком",
+    "descr": "",
+    "category": "process",
+    "has_bg": false
+  },
+  {
+    "tplid": "2691",
+    "code": "PR501",
+    "title": "Партнеры: персоны и логотипы в плитке",
+    "descr": "",
+    "category": "process",
+    "has_bg": false
+  },
+  {
+    "tplid": "2701",
+    "code": "PR502",
+    "title": "Партнеры: логотипы в асимметричной плитке",
+    "descr": "",
+    "category": "process",
+    "has_bg": false
+  },
+  {
+    "tplid": "2711",
+    "code": "PR503",
+    "title": "Логотипы партнеров на цветном фоне",
+    "descr": "",
+    "category": "process",
+    "has_bg": false
+  },
+  {
+    "tplid": "2721",
+    "code": "PR504",
+    "title": "Список партнеров и заголовок в две колонки",
+    "descr": "",
+    "category": "process",
+    "has_bg": false
+  },
+  {
+    "tplid": "620",
+    "code": "MH101",
+    "title": "Шапка с логотипом",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "621",
+    "code": "MH102",
+    "title": "Шапка с логотипом, заголовком и описанием",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "622",
+    "code": "MH201",
+    "title": "Шапка с текстовым логотипом и описанием",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "623",
+    "code": "MH202",
+    "title": "Шапка с логотипом-картинкой и описанием",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "624",
+    "code": "MH203",
+    "title": "Шапка с логотипом и описанием",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "625",
+    "code": "MH204",
+    "title": "Шапка с описанием и логотипом справа",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "626",
+    "code": "MH205",
+    "title": "Шапка с двумя логотипами",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "642",
+    "code": "MH301",
+    "title": "Шапка с центрированным логотипом-картинкой и двумя описаниями",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "643",
+    "code": "MH302",
+    "title": "Шапка с центрированным текстовым логотипом и двумя описаниями",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "627",
+    "code": "MF101",
+    "title": "Подвал с заголовком и описанием",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "628",
+    "code": "MF102",
+    "title": "Подвал с заголовком, описанием и кнопками соц. сетей",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "629",
+    "code": "MF201",
+    "title": "Подвал с заголовком, описанием и логотипом справа",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "630",
+    "code": "MF301",
+    "title": "Подвал с ссылками, заголовком, описанием и логотипом снизу",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "631",
+    "code": "MF302",
+    "title": "Подвал с ссылками, заголовком, описанием и логотипом сверху",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "632",
+    "code": "MF401",
+    "title": "Подвал с кнопками соц. сетей, заголовком, описанием и логотипом",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "633",
+    "code": "MF402",
+    "title": "Подвал с заголовком, описанием и кнопками соц. сетей",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "324",
+    "code": "MT101",
+    "title": "Карточка без полей с кнопкой",
+    "descr": "Изображение, заголовок и описание",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "656",
+    "code": "MT102",
+    "title": "Карточка с кнопкой",
+    "descr": "Изображение, заголовок и описание",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "636",
+    "code": "MT201",
+    "title": "Карточки с ссылками",
+    "descr": "Изображение, заголовок и описание",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "326",
+    "code": "MT301",
+    "title": "Карточки со ссылкой в две колонки",
+    "descr": "Изображение, заголовок и описание",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "634",
+    "code": "MT302",
+    "title": "Карточки с ценами в две колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "639",
+    "code": "MT401",
+    "title": "Заголовок, описание и кнопка на фоне с картинкой",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "640",
+    "code": "MT501",
+    "title": "Список с иконкой и заголовком",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "641",
+    "code": "MT502",
+    "title": "Список с иконкой, заголовком и описанием",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "645",
+    "code": "MT601",
+    "title": "Иконка с заголовком, описанием и кнопкой",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "843",
+    "code": "SV101",
+    "title": "Список с изображениями в две колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "847",
+    "code": "SV102",
+    "title": "Изображение слева и текст справа",
+    "descr": "опционально: название раздела и заголовок",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "844",
+    "code": "SV201",
+    "title": "Колонки с иконками",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "858",
+    "code": "SV202",
+    "title": "Колонки с простыми карточками и иконками",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "850",
+    "code": "SV203",
+    "title": "Колонки с простыми карточками",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "848",
+    "code": "SV301",
+    "title": "Две колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "845",
+    "code": "SV302",
+    "title": "Две колонки с маленькими иконками",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "841",
+    "code": "SV303",
+    "title": "Две колонки с галочками",
+    "descr": "3 типа галочек",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "855",
+    "code": "SV304",
+    "title": "Список с заголовком и текстом",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "859",
+    "code": "SV305",
+    "title": "Две колонки с иконками слева",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "842",
+    "code": "SV306",
+    "title": "Карточки с картинкой и текстом в две колонки",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "846",
+    "code": "SV307",
+    "title": "Список с иконками",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "851",
+    "code": "SV401",
+    "title": "Карточки с появлением информации при наведении",
+    "descr": "одна, две, три или четыре колонки",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "853",
+    "code": "SV402",
+    "title": "Карточки с картинкой, заголовком и текстом",
+    "descr": "одна, две, три или четыре колонки. Опционально: подзаголовок и ссылки.",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "856",
+    "code": "SV403",
+    "title": "Карточки с заголовком на картинке и текстом",
+    "descr": "одна, две, три или четыре колонки. Опционально: подзаголовок и ссылки.",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "857",
+    "code": "SV404",
+    "title": "Карточки с картинкой, заголовком сверху и текстом",
+    "descr": "одна, две, три или четыре колонки. Опционально: подзаголовок и ссылки.",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "852",
+    "code": "SV405",
+    "title": "Изображение, текст и кнопки в колонках",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "860",
+    "code": "SV406",
+    "title": "Карточки с текстом",
+    "descr": "текст показывается при наведении",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "849",
+    "code": "SV501",
+    "title": "Текст в раскрывающихся карточках",
+    "descr": "эффект: слайдинг вниз ",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1118",
+    "code": "SV502",
+    "title": "Текст в раскрывающихся карточках в две колонки",
+    "descr": "эффект: слайдинг вниз ",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1119",
+    "code": "SV503",
+    "title": "Текст в раскрывающихся карточках с заголовком в левой колонке",
+    "descr": "эффект: слайдинг вниз ",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "896",
+    "code": "FD101",
+    "title": "Поток: В линию для новостей или блога",
+    "descr": "изображение и текст в списке",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "924",
+    "code": "FD201",
+    "title": "Поток: Сетка для новостей или блога",
+    "descr": "изображение и текст в списке",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "897",
+    "code": "FD301",
+    "title": "Поток: Сетка для новостей или блога",
+    "descr": "в одну, две, три или четыре колонки",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "915",
+    "code": "FD302",
+    "title": "Поток: Сетка для новостей или блога с фоном",
+    "descr": "в одну, две, три или четыре колонки",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1004",
+    "code": "FD401",
+    "title": "Поток: Слайдер для новостей или блога",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "1331",
+    "code": "BF101",
+    "title": "Кнопка",
+    "descr": "",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "1363",
+    "code": "BF102",
+    "title": "Две или три кнопки",
+    "descr": "Средний либо уменьшенный размер",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "943",
+    "code": "BF103",
+    "title": "Кнопка для мобильной версии",
+    "descr": "зафиксированная снизу экрана",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "944",
+    "code": "BF104",
+    "title": "Гигантская кнопка",
+    "descr": "На всю ширину экрана или с отступами",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "993",
+    "code": "BF802A",
+    "title": "Кнопки в одну колонку",
+    "descr": "можно добавить иконку",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "209",
+    "code": "BF301",
+    "title": "Строка текста и кнопка",
+    "descr": "",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "580",
+    "code": "BF302",
+    "title": "Блок призыва к действию: заголовок, описание и кнопки",
+    "descr": "",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "581",
+    "code": "BF303",
+    "title": "Блок призыва к действию: заголовок, описание, кнопка и фоновое изображение",
+    "descr": "",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "588",
+    "code": "BF305",
+    "title": "Блок призыва к действию: текст и большая кнопка",
+    "descr": "",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "1125",
+    "code": "BF401",
+    "title": "Изображение, текст и кнопки в две колонки",
+    "descr": "",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "393",
+    "code": "BF701",
+    "title": "Кнопка зафиксированная в углу",
+    "descr": "фиксированная позиция в правом верхнем углу",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "217",
+    "code": "BF702",
+    "title": "Кнопка «наверх»",
+    "descr": "располагается внизу страницы",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "890",
+    "code": "BF702A",
+    "title": "Кнопка «наверх»",
+    "descr": "располагается внизу страницы",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "400",
+    "code": "BF703",
+    "title": "Кнопка: показать еще",
+    "descr": "показывает блоки по клику",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "392",
+    "code": "BF801",
+    "title": "Кнопки App Store и Google Play",
+    "descr": "опционально: заголовок и описание",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "1364",
+    "code": "BF802N",
+    "title": "Кнопка(и) с иконкой",
+    "descr": "можно заменить иконку, например скачать файл",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "1059",
+    "code": "BF803N",
+    "title": "Кнопка(и) «Скачать» с уточнением формата",
+    "descr": "набор иконок для разных форматов",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "1058",
+    "code": "BF804N",
+    "title": "Кнопка: иконка и текст со ссылкой",
+    "descr": "",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "654",
+    "code": "BF906",
+    "title": "Панель для анонса",
+    "descr": "",
+    "category": "form",
+    "has_bg": true
+  },
+  {
+    "tplid": "1035",
+    "code": "VD16",
+    "title": "Виджет с видео",
+    "descr": "фиксированная позиция в нижнем углу",
+    "category": "video",
+    "has_bg": false
+  },
+  {
+    "tplid": "651",
+    "code": "BF901",
+    "title": "Виджет для заказа обратного звонка",
+    "descr": "на мобильном устройстве: вызывает функцию звонка",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "708",
+    "code": "BF902N",
+    "title": "Виджет для отправки сообщения",
+    "descr": "опционально: несколько полей для ввода",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "653",
+    "code": "BF903",
+    "title": "Виджет с формой подписки",
+    "descr": "",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "824",
+    "code": "BF904",
+    "title": "Виджет с номером телефона",
+    "descr": "",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "825",
+    "code": "BF905",
+    "title": "Виджет с мессенджерами",
+    "descr": "",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "898",
+    "code": "BF905A",
+    "title": "Виджет с мессенджерами",
+    "descr": "cо всплывающими иконками вверх",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "985",
+    "code": "T985",
+    "title": "Виджет поиска по сайту, раскрывающийся по клику",
+    "descr": "Иконку и положение виджета на странице можно изменить",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "370",
+    "code": "T148",
+    "title": "Поиск по сайту от Google",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "269",
+    "code": "T133",
+    "title": "JivoChat Виджет",
+    "descr": "Вставка виджета от JivoChat",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "355",
+    "code": "T138",
+    "title": "Chatra Виджет",
+    "descr": "Вставка виджета от Chatra.io",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "416",
+    "code": "T152",
+    "title": "Виджет TimePad",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "684",
+    "code": "T151N",
+    "title": "Попап с виджетом TimePad",
+    "descr": "Попап с виджетом от Таймпада",
+    "category": "popup",
+    "has_bg": true
+  },
+  {
+    "tplid": "790",
+    "code": "T790",
+    "title": "Виджет Yclients для онлайн-записи",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "884",
+    "code": "T884",
+    "title": "Виджет Carrot Quest",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "247",
+    "code": "T158",
+    "title": "Disqus Comments",
+    "descr": "",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "312",
+    "code": "BF601",
+    "title": "Typeform",
+    "descr": "интегрирует формы с сервиса typeform.com",
+    "category": "form",
+    "has_bg": false
+  },
+  {
+    "tplid": "268",
+    "code": "T128",
+    "title": "CallbackHunter Виджет",
+    "descr": "Вставка виджета от CallbackHunter",
+    "category": "other",
+    "has_bg": true
+  },
+  {
+    "tplid": "364",
+    "code": "SM401",
+    "title": "Popup: Facebook social plugin",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "684_0",
+    "code": "T151N",
+    "title": "Popup: виджет TimePad",
+    "descr": "Попап с виджетом от Таймпада",
+    "category": "popup",
+    "has_bg": true
+  },
+  {
+    "tplid": "868_0",
+    "code": "T868",
+    "title": "Popup: HTML-код в попапе",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "658_0",
+    "code": "T658",
+    "title": "Предупреждение о возрастном ограничении",
+    "descr": "",
+    "category": "other",
+    "has_bg": false
+  },
+  {
+    "tplid": "1014_0",
+    "code": "BF501N",
+    "title": "Popup: форма подписки",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "702_0",
+    "code": "BF502N",
+    "title": "Popup: форма с множеством полей",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "390_0",
+    "code": "BF503",
+    "title": "Popup: information",
+    "descr": "опционально: заголовок, описание, кнопки и кнопки «поделиться»",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "945_0",
+    "code": "BF504",
+    "title": "Popup: форма в углу экрана",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "365_0",
+    "code": "SM402",
+    "title": "Popup: VKontakte social plugin",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "331_0",
+    "code": "VD09",
+    "title": "Popup: Видео",
+    "descr": "Youtube, Vimeo, .mp4 и другие",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "746_0",
+    "code": "GL08N",
+    "title": "Popup: Галерея",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "756_0",
+    "code": "ST500",
+    "title": "Popup: карточка товара",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "766_0",
+    "code": "ST505",
+    "title": "Popup: карточка товара",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "750_0",
+    "code": "ST510",
+    "title": "Горизонтальный popup: карточка товара",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  },
+  {
+    "tplid": "1093_0",
+    "code": "T1093",
+    "title": "Popup: Zero Block в попапе",
+    "descr": "",
+    "category": "popup",
+    "has_bg": false
+  }
+]
