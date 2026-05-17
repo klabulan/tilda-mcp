@@ -263,11 +263,27 @@ export class XhrTransport implements WriteTransport {
     }
   }
 
-  async editBlock(): Promise<void> {
-    throw new TransportNotImplementedError(
-      "xhr",
-      "editBlock — generic block-edit endpoints not yet captured."
-    );
+  async editBlock(blockid: string, patch: unknown): Promise<void> {
+    if (!patch || typeof patch !== "object" || Array.isArray(patch)) {
+      throw new Error("edit_block patch must be a plain object {pageid, field1, field2, ...}");
+    }
+    const p = patch as Record<string, unknown>;
+    if (!p.pageid) {
+      throw new Error("edit_block patch must include pageid (the page that contains the block)");
+    }
+    const body = new URLSearchParams();
+    body.set("comm", "saverecord");
+    body.set("pageid", String(p.pageid));
+    body.set("recordid", blockid);
+    for (const [k, v] of Object.entries(p)) {
+      if (k === "pageid" || k === "comm" || k === "recordid") continue;
+      body.set(k, v == null ? "" : String(v));
+    }
+    const { text } = await this.post("/page/submit/", body);
+    if (!text.trim().toUpperCase().startsWith("OK")) {
+      throw new Error(`edit_block unexpected response: "${text.slice(0, 200)}"`);
+    }
+    log("info", "xhr.edit_block", `Updated block ${blockid} on page ${p.pageid} (${Object.keys(p).length - 1} field(s))`);
   }
 
   async publish(pageid: string): Promise<PublishResult> {

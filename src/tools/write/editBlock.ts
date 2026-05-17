@@ -3,8 +3,14 @@ import { getWriteTransport, reportTransportFailure, resetFailureCounter } from "
 import { log } from "../../logging.js";
 
 export const editBlockSchema = z.object({
-  blockid: z.string().describe("Tilda block id"),
-  patch: z.unknown().describe("Block-type-specific field map; Zero Block: {elements: [...]}; T-block: {settings, content}"),
+  blockid: z.string().describe("Tilda block (record) id — value returned by add_block"),
+  patch: z.record(z.unknown()).describe(
+    "Patch object. MUST include `pageid` (page that owns the block) plus any field=value pairs to update. "
+    + "Field names depend on the T-block schema. Examples: "
+    + "T0868 HTML popup → {pageid, code: '<div>...</div>', linkhook: '#mypopup'}. "
+    + "Use a Zero Block? Don't — call import_zeroblock instead. "
+    + "Tilda silently ignores unknown fields. Use this for non-ZB blocks (forms, popups, headers, etc.)."
+  ),
 });
 
 export async function handleEditBlock(params: z.infer<typeof editBlockSchema>): Promise<string> {

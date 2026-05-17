@@ -1,0 +1,21 @@
+{
+  "action": "edit_block",
+  "method": "POST",
+  "url": "https://tilda.ru/page/submit/",
+  "headers_required": ["Cookie", "Origin", "Referer"],
+  "content_type": "application/x-www-form-urlencoded",
+  "body_template": "comm=saverecord&pageid={{pageid}}&recordid={{recordid}}&{{field1}}={{val1}}&{{field2}}={{val2}}...",
+  "response_format": "text — 'OK' on success",
+  "notes": [
+    "Generic update endpoint for any T-block content/settings.",
+    "Field names depend on the T-block's content schema. Examples:",
+    "  T0868 (HTML popup):  code (HTML body), linkhook (popup activation selector like '#mypopup')",
+    "  T2441 (form):        title, descr, formstyle, formsubmittxt, formsubmitcolor, etc. (TBD per-block)",
+    "  T0030 (text):        text (rich-text HTML)",
+    "linkhook fields rewrite the popup CSS hook — passing custom values lets multiple popups coexist on the same page.",
+    "URLSearchParams encoding required; field values are URL-encoded."
+  ],
+  "captured_at": "2026-05-17",
+  "captured_against_tilda_host": "tilda.ru",
+  "important": "We do NOT yet have a list of valid field names per T-block. Caller passes whatever {key:value} they want via the `patch` MCP arg; Tilda silently ignores unknown fields. To discover fields, observe network traffic when editing a real block in the editor UI."
+}
