@@ -10,6 +10,7 @@ import {
   getPageExportSchema, handleGetPageExport,
 } from "./tools/read/pages.js";
 import { listBlockTemplatesSchema, handleListBlockTemplates } from "./tools/read/listBlockTemplates.js";
+import { describeElementSchemaSchema, handleDescribeElementSchema } from "./tools/read/describeElementSchema.js";
 import { createPageSchema, handleCreatePage } from "./tools/write/createPage.js";
 import { setPageSettingsSchema, handleSetPageSettings } from "./tools/write/setPageSettings.js";
 import { deletePageSchema, handleDeletePage } from "./tools/write/deletePage.js";
@@ -24,7 +25,7 @@ import { resolveCaptchaInteractiveSchema, handleResolveCaptchaInteractive } from
 import { dumpTransportLogSchema, handleDumpTransportLog } from "./tools/helpers/dumpTransportLog.js";
 import { disposeTransport } from "./transport/factory.js";
 
-const TOOL_COUNT = 18;
+const TOOL_COUNT = 19;
 
 function createMcpServer(): McpServer {
   const server = new McpServer({
@@ -56,6 +57,10 @@ function createMcpServer(): McpServer {
   server.tool("list_block_templates", "Каталог 806 Tilda T-блоков (cover, form, popup, gallery, slider, menu, ...). Bundled offline; refresh via 'npm run refresh:templates'. Use this to discover block_type values for add_block instead of guessing.",
     listBlockTemplatesSchema.shape,
     async (p) => ({ content: [{ type: "text", text: await handleListBlockTemplates(p) }] }));
+
+  server.tool("describe_element_schema", "Schema for Zero Block element types (text/button/shape/image/video/html/tooltip/form/gallery/vector) — exact field names + defaults + caveats (e.g. button uses 'caption' not 'text', 'link' not 'href'). Call this before constructing zero_block_json for import_zeroblock.",
+    describeElementSchemaSchema.shape,
+    async (p) => ({ content: [{ type: "text", text: await handleDescribeElementSchema(p) }] }));
 
   // --- 7 write tools (fork additions; XHR-RE transport against tilda.ru editor endpoints) ---
   server.tool("create_page", "Создать новую пустую страницу в проекте (template Blank).",
@@ -168,7 +173,7 @@ async function main() {
     const server = createMcpServer();
     const transport = new StdioServerTransport();
     await server.connect(transport);
-    console.error(`[tilda-mcp@fork] Сервер запущен (stdio). ${TOOL_COUNT} инструментов (6 read + 8 write + 4 helpers).`);
+    console.error(`[tilda-mcp@fork] Сервер запущен (stdio). ${TOOL_COUNT} инструментов (7 read + 8 write + 4 helpers).`);
   }
 }
 

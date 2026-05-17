@@ -1,0 +1,148 @@
+{
+  "_doc": {
+    "source": "Captured 2026-05-17 via window.addElem__getDefaultParametersByElementType() in Tilda Zero Block editor.",
+    "common_fields": "Every element MUST have: elem_id (unique string, usually Date.now()), elem_type, top, left, width, height, leftunits/topunits/widthunits/heightunits (default 'px'), zindex, hidden ('n' or 'y'). Animation fields are optional: animstyle (fadein|fadeinup|fadeindown|fadeinleft|fadeinright|zoomin), animduration (sec), animdelay (sec), animdistance (px), animscale (0-1), animtriggeroffset (px).",
+    "important": "Tilda IGNORES unknown fields silently. Field NAMES matter: button text is 'caption' (NOT 'text'); button link is 'link' (NOT 'href' or 'url').",
+    "artboard_fields": "Top-level keys on the ZB JSON (not inside any element): ab_height, ab_bgcolor, ab_filteropacity (0-1), ab_filteropacity2 (0-1), ab_bgattachment (scroll|fixed), ab_bgposition (e.g. 'center center'), ab_valign (top|center|bottom), ab_upscale ('grid'|'shape'|'all'|'none'), groups: [], timestamp: <ms>, meta: { feeds: {} }."
+  },
+  "text": {
+    "_doc": "Plain rich-text element. Renders as a <div class='tn-atom'> with text inside.",
+    "required": ["text"],
+    "fields": {
+      "text": "string — visible text. Supports basic <br>, &nbsp;, but mostly plain.",
+      "fontsize": "px as string, e.g. '20'",
+      "color": "hex e.g. '#000000'",
+      "fontfamily": "e.g. 'Arial' or 'var(--t-text-font,Arial)'",
+      "fontweight": "'400' (regular) / '700' (bold) / '800'",
+      "lineheight": "string '1.55'",
+      "letterspacing": "string '0'",
+      "textfit": "'autoheight' (default) — height grows to fit content",
+      "valign": "'top'|'middle'|'bottom'",
+      "opacity": "0-1 as string",
+      "shadow_text_opacity": "0-100 as string"
+    }
+  },
+  "button": {
+    "_doc": "Clickable button. CRITICAL: text field is 'caption', NOT 'text'. Link field is 'link', NOT 'href'.",
+    "required": ["caption"],
+    "fields": {
+      "caption": "string — button label (e.g. 'LET\\'S GO!')",
+      "link": "URL the button navigates to. For popup: '#popup:tNNNN_<recordid>' where NNNN is the popup T-code (e.g. 1093) and recordid is the popup block's id from add_block.",
+      "height": "px as string, default '55'",
+      "bgcolor": "hex e.g. '#000000'",
+      "color": "hex (text color) e.g. '#ffffff'",
+      "borderradius": "e.g. '30 30 30 30' (top-left top-right bottom-right bottom-left, all px)",
+      "fontsize": "px as string '14'",
+      "fontfamily": "e.g. 'Arial'",
+      "fontweight": "'600' typical",
+      "speedhover": "hover-transition seconds, e.g. '0.2'",
+      "letterspacing": "string '0'"
+    }
+  },
+  "shape": {
+    "_doc": "Rectangle/circle decorative shape.",
+    "required": [],
+    "fields": {
+      "figure": "'rectangle' (default) | 'circle'",
+      "bgcolor": "hex e.g. '#fff705'",
+      "borderradius": "e.g. '0 0 0 0'",
+      "height": "px '100'",
+      "layer": "optional label for ZB layers panel"
+    }
+  },
+  "image": {
+    "_doc": "Static image. width/height drive bounding box; imagefit controls aspect.",
+    "required": ["img"],
+    "fields": {
+      "img": "URL — typically static.tildacdn.com/... after upload, but external URLs work",
+      "imagefit": "'auto' | 'cover' | 'contain'",
+      "imageposition": "'center center' etc.",
+      "borderradius": "'0 0 0 0'",
+      "filewidth": "intrinsic width (number)",
+      "fileheight": "intrinsic height (number)",
+      "heightmode": "'hug' (autosize to image)"
+    }
+  },
+  "video": {
+    "_doc": "YouTube/Vimeo/MP4 embed.",
+    "required": ["videourl OR youtubeid OR vimeoid"],
+    "fields": {
+      "height": "px '420'",
+      "playiconsize": "px '70'",
+      "playiconcolor": "hex '#000000'"
+    }
+  },
+  "html": {
+    "_doc": "Arbitrary HTML snippet (escape-hatch).",
+    "required": ["code"],
+    "fields": {
+      "code": "HTML string, e.g. '<div>Hello world!</div>'",
+      "height": "px '170'"
+    }
+  },
+  "form": {
+    "_doc": "Subscribe / contact form inside a Zero Block. 'inputs' is a STRINGIFIED JSON array of field objects.",
+    "required": ["inputs", "buttontitle"],
+    "fields": {
+      "inputs": "STRINGIFIED JSON array of { lid (number), ls ('10'|'20'), loff, li_type ('em'|'nm'|'ph'|'adr'|'cl'|'tx'), li_name (POST name), li_title (label), li_ph (placeholder), li_nm }",
+      "inputpos": "'v' (vertical) | 'h' (horizontal)",
+      "inputbgcolor": "hex '#ffffff'",
+      "inputbordercolor": "hex '#000000'",
+      "inputbordersize": "px '1'",
+      "inputheight": "px '50'",
+      "inputmargbottom": "px '20'",
+      "buttontitle": "submit button label e.g. 'SUBMIT'",
+      "buttonbgcolor": "hex '#000000'",
+      "buttoncolor": "hex (button text) '#ffffff'",
+      "buttonwidth": "px '160'",
+      "buttonheight": "px '50'",
+      "buttonfontsize": "px '14'",
+      "buttonfontweight": "'600'",
+      "inputfontsize": "px '16'",
+      "inputtitlefontsize": "px '16'",
+      "inputfontfamily": "e.g. 'Arial'"
+    }
+  },
+  "tooltip": {
+    "_doc": "Hover/click tooltip — an icon that reveals a text bubble.",
+    "fields": {
+      "tipcaption": "tooltip body text",
+      "bgcolor": "trigger icon bg hex",
+      "tipbgcolor": "bubble bg hex",
+      "tipradius": "px '10'",
+      "tipwidth": "px '280'",
+      "tipshadowblur": "px '15'",
+      "shadows": "CSS box-shadow string",
+      "color": "tooltip text hex",
+      "fontsize": "px '14'",
+      "lineheight": "string '1.4'",
+      "fontfamily": "e.g. 'Arial'",
+      "fontweight": "'400'"
+    }
+  },
+  "gallery": {
+    "_doc": "Image slideshow. 'imgs' is a STRINGIFIED JSON array.",
+    "required": ["imgs"],
+    "fields": {
+      "imgs": "STRINGIFIED JSON array of { lid, li_img (URL), li_imgalt, li_imgtitle, li_youtube, li_vimeo, li_imgurl, li_imgtarget (bool), li_imgnofollow (bool) }",
+      "height": "px '400'",
+      "slds_loop": "'loop' | 'noloop'",
+      "slds_arrowcontrols": "'in' | 'out' | 'none'",
+      "slds_arrowcolor": "hex",
+      "slds_arrowbgcolor": "hex",
+      "slds_dotscontrols": "'none' | 'dots'",
+      "slds_dotsbgcolor": "hex",
+      "slds_arrowsize": "'s' | 'm' | 'l'"
+    }
+  },
+  "vector": {
+    "_doc": "SVG vector shape — custom paths.",
+    "required": ["vectorsvg"],
+    "fields": {
+      "vectorsvg": "raw <svg>...</svg> string",
+      "vectorjson": "Tilda's internal path representation (only needed for editing in Tilda UI; omit for one-shot import)",
+      "filewidth": "number — intrinsic SVG width",
+      "fileheight": "number — intrinsic SVG height"
+    }
+  }
+}
